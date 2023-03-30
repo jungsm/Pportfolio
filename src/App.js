@@ -1,16 +1,14 @@
-import img from "./main.png";
-import img2 from "./img.png";
 
 import './App.css';
 
 function App() {
   return (
     <section id="wrap">
-       <img className="wrap_img" src={img2}></img>
-    <section id='header'>
+      <div className='banner_img'>
+      <div className='container'>
       <section className='main_banner'>
         <div className='main_banner_left'>
-          <img src={img} className="banner_img"></img>
+          <img src="img/main.png"/>
         </div>
         <div className='main_banner_right'>
           <div className='right_textbox'>
@@ -20,13 +18,14 @@ function App() {
             <button>Git Hub</button>
             <button>이력서</button>
             </div>
-          </div>
         </div>
-      </section>
-      
-
-
+        </div>  
     </section>
+    </div>
+    <img src='img/img.png'className='a' ></img>
+    </div>
+    <div className='b'>
+    </div>
     </section>
   );
 }
