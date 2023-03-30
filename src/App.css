@@ -15,14 +15,18 @@
   justify-content: flex-start;
 }
 .main_banner_right{
+  display: flex;
+  align-items: center;
   padding-left: 20px;
 }
 .main_button_box{
-  padding-top: 20%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
 }
 .main_banner_right button{
-  width: 200px;
-  height: 70px;
+  width: 100px;
+  height: 50px;
   font-size: 16px;
   border: none;
   margin: 0px 15px;
