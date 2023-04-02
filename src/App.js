@@ -8,21 +8,29 @@ function App() {
       <div className='container'>
       <section className='main_banner'>
         <div className='main_banner_left'>
-          <img src="img/main.png"/>
+          <img className='img_banner' src="img/main.png"/>
         </div>
         <div className='main_banner_right'>
           <div className='right_textbox'>
-            <p>Grow Your Business Using Our Services</p>
+            <p className='title'>태양과 달처럼 조화로운<p/> </p>
             <div className="main_button_box">
-            <button>Notion</button>
-            <button>Git Hub</button>
-            <button>이력서</button>
+            <a href='https://mango2.notion.site/008cc17e31554d1cbf85c6c993dcd561'><button>Notion</button></a>
+            <a href='https://github.com/jungsm?tab=repositories'><button>Git Hub</button></a>
+            <a href=''><button>이력서</button></a>
             </div>
         </div>
         </div>  
     </section>
+    <section>
+    </section>
     </div>
-    <img src='img/img.png'className='a' ></img>
+    <img src='img/img.png'className='shape01' ></img>
+    <img src='img/banner_shape02.png'className='shape02' ></img>
+    <img src='img/banner_shape03.png'className='shape03' ></img>
+    <img src='img/banner_shape04.png'className='shape04' ></img>
+    <img src='img/banner_shape05.png'className='shape05' ></img>
+    <img src='img/banner_shape06.png'className='shape06' ></img>
+    <img src='img/banner_shape07.png'className='shape07' ></img>
     </div>
     <div className='b'>
     </div>

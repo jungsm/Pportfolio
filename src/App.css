@@ -41,12 +41,52 @@
   color: #ffffff;
 }
 .right_textbox p{
-    font-size: 52px;
+    font-size: 46px;
     font-weight: bold;
 }
-.a{
+.shape01{
   position: absolute;
  top: 0;
  left: 0;
  z-index: -1;
+}
+.shape02{
+  position: absolute;
+  top: 16%;
+  left: 4%;
+  z-index: -1;
+}
+.shape03{
+  position: absolute;
+  left: 18.3%;
+    top: 20%;
+  z-index: -1;
+}
+.shape04{
+  position: absolute;
+  left: 11.6%;
+    top: 29%;
+  z-index: -1;
+}
+.shape05{
+  position: absolute;
+  bottom: 27.5%;
+    left: 8%;
+  z-index: -1;
+}
+.shape06{
+  position: absolute;
+  right: 17.25%;
+  top: 24%;
+  z-index: -1;
+}
+.shape07{
+  position: absolute;
+  bottom: 19%;
+    right: 25.8%;
+  z-index: -1;
+}
+
+.img_banner{
+width: 700px;
 }
