@@ -1,6 +1,12 @@
-
+import { Animated } from 'react-native';
+import React from 'react';
 import './App.css';
-
+class SomeComponent extends React.Component {
+  state = {
+    animation: new Animated.Value(0)
+  }
+  // ...
+}
 function App() {
   return (
     <section id="wrap">
@@ -8,11 +14,13 @@ function App() {
       <div className='container'>
       <section className='main_banner'>
         <div className='main_banner_left'>
-          <img className='img_banner' src="img/main.png"/>
+          <div className=''>
+        {/*   <img className='img_banner' src="img/main.png"/> */}
+          </div>
         </div>
         <div className='main_banner_right'>
           <div className='right_textbox'>
-            <p className='title'>태양과 달처럼 조화로운<p/> </p>
+            <p className='title'>해와 달처럼 조화<p/> </p>
             <div className="main_button_box">
             <a href='https://mango2.notion.site/008cc17e31554d1cbf85c6c993dcd561'><button>Notion</button></a>
             <a href='https://github.com/jungsm?tab=repositories'><button>Git Hub</button></a>
