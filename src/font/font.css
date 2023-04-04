@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 100;
+    src: url('./AnyConv.com__HelveticaNeueLTPro-Lt.woff') format("woff");
+  }
+  
+  
+  @font-face {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    src: url("./AnyConv.com__HelveticaNeueLTPro-Md.woff") format("woff");
+  }
+  
+  
+  @font-face {
+      font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: bold;
+    src: url("./AnyConv.com__HelveticaNeueLTPro-Bd.woff") format("woff");
+  }
+  @font-face {
+    font-family: "AppleSDGothic";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./AnyConv.com__AppleSDGothicNeoM.woff") format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothic";
+font-style: normal;
+font-weight: bold;
+src: url("./AnyConv.com__AppleSDGothicNeoB.woff") format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothic";
+font-style: normal;
+font-weight: 500;
+src: url("./AnyConv.com__AppleSDGothicNeoL.woff") format("woff");
+}

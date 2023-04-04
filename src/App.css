@@ -1,8 +1,31 @@
 #wrap{
+  
 }
+/*헤더메뉴*/
+.menu_nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_drop{
+  display: flex;
+}
+.menu_drop li a{
+  font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+     font-size: 16px;
+    line-height: 1;
+    padding: 35px 18px;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  background-color: #3482ff;
+}
+/*메인비주얼*/
 .banner_img{
   position: relative;
-  padding: 6% 0;
   z-index: 1;
   background-image: url(./back.jpg);
   background-repeat: no-repeat;
@@ -41,17 +64,22 @@
   width: 100px;
   height: 50px;
   font-size: 16px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
   border: none;
   margin: 0px 15px;
   border-radius: 20px;
   background-color: #3482ff;
   color: #ffffff;
 }
-.right_textbox{}
 .right_textbox p{
-    font-size: 46px;
-    font-weight: bold;
+  font-family: "AppleSDGothic";
+font-style: normal;
+font-weight: 500;
+font-size: 46px;
 }
+/*배경 이미지*/
 .shape01{
   position: absolute;
  top: 0;
