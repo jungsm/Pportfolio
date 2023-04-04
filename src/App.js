@@ -8,7 +8,7 @@ function App() {
       <div className='container'>
       <section className='main_banner'>
         <div className='main_banner_left'>
-          <img className='img_banner' src="img/main.png"/>
+        {/*   <img className='img_banner' src="img/main.png"/> */}
         </div>
         <div className='main_banner_right'>
           <div className='right_textbox'>
