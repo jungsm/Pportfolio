@@ -12,7 +12,7 @@ function App() {
         </div>
         <div className='main_banner_right'>
           <div className='right_textbox'>
-            <p className='title'>태양과 달처럼 조화로운<p/> </p>
+            <p className='title'>해와 달처럼 조화롭게 코드....<p/> </p>
             <div className="main_button_box">
             <a href='https://mango2.notion.site/008cc17e31554d1cbf85c6c993dcd561'><button>Notion</button></a>
             <a href='https://github.com/jungsm?tab=repositories'><button>Git Hub</button></a>
