@@ -69,43 +69,73 @@ function App() {
         <li className="about_item">
           <div className="item_box">
           <div className="item_icon">
-            <img className="about_img" src="img/about1.png"></img>
           </div>
-          <div className="h2_title">타이틀</div>
-          <div className="kr_text">가나다라마바사</div>
+          <div className="h2_title">프로필</div>
+          <div className="text_box">
+          <p className="kr_text">정선문</p>
+          <p className="kr_text">2001.07.14</p>
+          <p className="kr_text">경기도 남양주시 거주</p>
           </div>
-        </li>
-        <li className="about_item">
-          <div className="item_box">
-          <div className="item_icon">
-            <img className="about_img" src="img/about1.png"></img>
-          </div>
-          <div className="h2_title">타이틀</div>
-          <div className="kr_text">가나다라마바사</div>
           </div>
         </li>
         <li className="about_item">
           <div className="item_box">
           <div className="item_icon">
-            <img className="about_img" src="img/about1.png"></img>
           </div>
-          <div className="h2_title">타이틀</div>
-          <div className="kr_text">가나다라마바사</div>
+          <div className="h2_title">교육수료</div>
+          <p className="kr_text">2020.03월~2023.02월</p>
+          <p className="kr_text">경남도립거창대학교 컴퓨터공학 졸업</p>
+          <p className="kr_text">2022.11월~2023.05월</p>
+          <p className="kr_text">그린컴퓨터아트학원 프론트과정 수료</p>
           </div>
         </li>
         <li className="about_item">
           <div className="item_box">
           <div className="item_icon">
-            <img className="about_img" src="img/about1.png"></img>
           </div>
-          <div className="h2_title">타이틀</div>
-          <div className="kr_text">가나다라마바사</div>
+          <div className="h2_title">자격증</div>
+          <p className="kr_text">운전면허증 2종 자동</p>
+          <p className="kr_text">2020.02.14</p>
           </div>
         </li>
       </ul>
     </section>
+    <section className="project margin_top inner">
+      <div className="project_box">
+        <div className="project_text_box">
+          <div className="project_text">
+          작업한<br/>프로젝트
+       
+          </div>
+        </div>
+          <ul className="project_items">
+            <li className="project_item">
+              <img src="img/prt1.png"></img>
+            </li>
+            <li className="project_item">
+            <img src="img/prt2.png"></img>
+            </li>
+            <li className="project_item">
+              <img src="img/prt3.png"></img>
+            </li>
+            <li className="project_item">4</li>
+          </ul>
+        </div>
+    </section>
     </section>
     </PC>
+
+
+
+
+
+
+
+
+
+
+
+
     <Mobile>
     <div className='banner_img'>
       <div className='container'>
