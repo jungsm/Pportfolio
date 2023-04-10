@@ -1,10 +1,12 @@
-import React from "react";
 import './rest.css'
 import './App.css';
 import './font/font.css'
+import 'swiper/css';
+
+import React, { useRef, useState } from "react";
+import { Keyboard, Pagination, Navigation } from "swiper";
 import {useMediaQuery} from 'react-responsive';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleLeft, faArrowLeft } from "@fortawesome/free-regular-svg-icons";
+import { Swiper, SwiperSlide } from 'swiper/react';
 export const Mobile = ({children}) => {
   const isMobile = useMediaQuery({
     query : "(max-width:880px)"
@@ -33,7 +35,7 @@ function App() {
       <div className='container'>
       <section className='header'>
         <div className='menu_nav'>
-          <div className='logo'></div>
+          <div className='logo'>logo</div>
           <div className='menu_item'>
             <ul className='menu_drop'>
               <li><a>Home</a></li>
@@ -116,23 +118,50 @@ function App() {
           <span className="h1_text">이미지를 클릭 시 해당 프로젝트의 상세정보를<br/> 확인하실 수 있습니다.</span> <br/>
           <span className="h4_text">HTML,CSS,SCSS,JavaScript,JQuery<br/>React,React Native로 작업한 프로젝트 입니다.</span>
           <ul className="arrow_box">
+            <div className='swiper-button-prev'></div>
           <li><img src="img/arrow2.png"></img></li>
           <li> <img src="img/arrow11.png"></img></li>
           </ul>
           </div>
         </div>
           <ul className="project_items">
+          <Swiper
+      style={{width:'1600px',height:'551px'}}
+      spaceBetween={50}
+      slidesPerView={3.8}
+      keyboard={{
+        enabled: true,
+      }}
+      autoplay={true}
+      modules={[Keyboard, Pagination, Navigation]}
+      navigation={true}
+      pagination={{ clickable: true }}
+      className="mySwiper"
+    >
+          <SwiperSlide>
             <li className="project_item">
               <img src="img/prt1.png"></img>
             </li>
+            </SwiperSlide>
+            <SwiperSlide>
             <li className="project_item">
             <img src="img/prt2.png"></img>
             </li>
+            </SwiperSlide>
+            <SwiperSlide>
             <li className="project_item">
               <img src="img/prt3.png"></img>
             </li>
+            </SwiperSlide>
+            <SwiperSlide>
             <li className="project_item">4</li>
+            </SwiperSlide>
+            <SwiperSlide>
+            <li className="project_item">5</li>
+            </SwiperSlide>
+            </Swiper>
           </ul>
+          
         </div>
         </div>
         <div>
@@ -140,6 +169,13 @@ function App() {
         <img src='img/banner_shape08.png' className='shape08'></img>
         <img src='img/moon.png' className='moon'></img>
         </div>
+    </section>
+    <section className="section1">
+      section1
+      
+    </section>
+    <section className="section2">
+      footer
     </section>
     </section>
     </PC>
