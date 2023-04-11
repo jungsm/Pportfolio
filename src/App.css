@@ -11,10 +11,15 @@
   font-size: 24px;
   margin-bottom: 3%;
 }
-.swiper-button-prev{
-  width: 100px;
-  height: 100px;
-  content: 'next';
+.h3_title{
+  text-align: center;
+  font-family: "AppleSDGothic";
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 3%;
+}
+.mt{
+  margin-top: 5%;
 }
 .kr_text{
   font-family: "AppleSDGothic";
@@ -124,13 +129,13 @@
   padding-top: 20%;
 }
 
-.main_banner_right button{
-  width: 140px;
-  height: 50px;
-  font-size: 16px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 500;
+.git_button{
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+  font-family: "AppleSDGothic";
+font-style: normal;
+font-weight: 500;
   border: none;
   margin-right: 35px;
   border-radius: 10px;
@@ -289,36 +294,64 @@
 
 /*모달창*/
 .ReactModal__Overlay {
-  inset: 100px;
+ 
   z-index: 10;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 .ReactModal__Overlay--after-open{
+  
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 .ReactModal__Overlay--before-close{
+  
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 .ReactModal__Content{
+  overflow: hidden;
   opacity: 0;
+  inset: 200px !important ;
   transition: opacity 0.5s ease-in-out;
 }
 .ReactModal__Content--after-open{
+  inset: 100px;
   opacity: 1;
 }
 .ReactModal__Content--before-close{
   opacity: 0;
+}
+.modal_wrap{
+  display: flex;
+  overflow: hidden;
 }
 .modal{
   width: 50px;
   z-index: 10;
   float: right;
 }
+.modal_box{
+  padding-left: 3%;
+}
+.modal_text{
+  padding: 8px 0px;
+  font-family: "AppleSDGothic";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+}
+.modal_buttons{
+  margin-top: 30%;
+  padding-left: 47px;
+}
 .modal_img{
-  width: 600px;
+  display: flex;
+    width: 60%;
+    height: 870px;
+    background-color: #afc9f3;
+    justify-content: center;
+    align-items: center;
 }
 /*스와이퍼 */
 .swiper-button-prev {
@@ -338,7 +371,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 100%;
-height: 800px;
+height: 500px;
 background-color: #f3f7fa;
 border-radius: 0px 0px 150px 0px;
 }

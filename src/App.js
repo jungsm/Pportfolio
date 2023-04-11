@@ -62,7 +62,7 @@ function App() {
           <div className='right_textbox'>
             <p className='h1_title'>해와 달처럼<br></br> 조화로운 코드를 구현하는<br/> 프론트엔드 정선문 입니다<p/> </p>
             <div className="main_button_box">
-            <a href='https://github.com/jungsm?tab=repositories'><button>Git Hub</button></a>
+            <a href='https://github.com/jungsm?tab=repositories'><button className='git_button'>깃허브</button></a>
             </div>
         </div>
         </div>  
@@ -150,7 +150,26 @@ function App() {
               <img onClick={() => openModal(0)}  src="img/prt1.png"></img>
               <Modal isOpen={modalOpen[0]} closeTimeoutMS={300}   onRequestClose={closeModal}>
               <img src='img/x.png' className="modal" onClick={() => closeModal(0)}></img>
-              <img className='modal_img' src='img/modal2.png'></img>
+              <div className='modal_wrap'>
+              <div className='modal_img'>
+              <img className="" src=''></img>
+              이미지
+              </div >
+              <div className='modal_box'>
+                <p className='h3_title mt'>첫번째 프로젝트 수원시청 사이트 입니다.</p>
+                <ul className='modal_texts'>
+                <li className='modal_text'>기술스택:</li>
+                <li className='modal_text'>기여도:</li>
+                <li className='modal_text'>작업기간:</li>
+                <li className='modal_text'>특징::</li>
+                </ul>
+                <div className='modal_buttons'>
+                <button className='git_button'>깃허브</button>
+                <button className='git_button'>기획서</button>
+                <button className='git_button'>사이트</button>
+                </div>
+              </div>
+              </div>
              </Modal>
             </li>
             </SwiperSlide>
@@ -160,6 +179,26 @@ function App() {
             <Modal isOpen={modalOpen[1]}  onRequestClose={() => closeModal(1)}>
               <h2>모달 1 내용</h2>
               <img src='img/x.png' className="modal" onClick={() => closeModal(1)}></img>
+              <div className='modal_wrap'>
+              <div className='modal_img'>
+              <img className="" src=''></img>
+              이미지
+              </div >
+              <div className='modal_box'>
+                <p className='h3_title mt'>두번째 프로젝트 수원시청 사이트 입니다.</p>
+                <ul className='modal_texts'>
+                <li className='modal_text'>기술스택:</li>
+                <li className='modal_text'>기여도:</li>
+                <li className='modal_text'>작업기간:</li>
+                <li className='modal_text'>특징::</li>
+                </ul>
+                <div className='modal_buttons'>
+                <button className='git_button'>깃허브</button>
+                <button className='git_button'>기획서</button>
+                <button className='git_button'>사이트</button>
+                </div>
+              </div>
+              </div>
              </Modal>
             </li>
             </SwiperSlide>
@@ -169,6 +208,27 @@ function App() {
               <Modal isOpen={modalOpen[2]} onRequestClose={() => closeModal(2)}>
               <h2>모달 2 내용</h2>
               <img src='img/x.png' className="modal" onClick={() => closeModal(2)}></img>
+              
+              <div className='modal_wrap'>
+              <div className='modal_img'>
+              <img className="" src=''></img>
+              이미지
+              </div >
+              <div className='modal_box'>
+                <p className='h3_title mt'>세번째 프로젝트 수원시청 사이트 입니다.</p>
+                <ul className='modal_texts'>
+                <li className='modal_text'>기술스택:</li>
+                <li className='modal_text'>기여도:</li>
+                <li className='modal_text'>작업기간:</li>
+                <li className='modal_text'>특징::</li>
+                </ul>
+                <div className='modal_buttons'>
+                <button className='git_button'>깃허브</button>
+                <button className='git_button'>기획서</button>
+                <button className='git_button'>사이트</button>
+                </div>
+              </div>
+              </div>
              </Modal>
             </li>
             </SwiperSlide>
@@ -177,6 +237,26 @@ function App() {
             <Modal isOpen={modalOpen[3]} onRequestClose={() => closeModal(3)}>
               <h2>모달 3 내용</h2>
               <img src='img/x.png' className="modal" onClick={() => closeModal(3)}></img>
+              <div className='modal_wrap'>
+              <div className='modal_img'>
+              <img className="" src=''></img>
+              이미지
+              </div >
+              <div className='modal_box'>
+                <p className='h3_title mt'>네번째 프로젝트 수원시청 사이트 입니다.</p>
+                <ul className='modal_texts'>
+                <li className='modal_text'>기술스택:</li>
+                <li className='modal_text'>기여도:</li>
+                <li className='modal_text'>작업기간:</li>
+                <li className='modal_text'>특징::</li>
+                </ul>
+                <div className='modal_buttons'>
+                <button className='git_button'>깃허브</button>
+                <button className='git_button'>기획서</button>
+                <button className='git_button'>사이트</button>
+                </div>
+              </div>
+              </div>
              </Modal>
             </SwiperSlide>
             <SwiperSlide>
@@ -184,6 +264,26 @@ function App() {
             <Modal isOpen={modalOpen[4]} onRequestClose={() => closeModal(4)}>
               <h2>모달 4 내용</h2>
               <img src='img/x.png' className="modal" onClick={() => closeModal(4)}></img>
+              <div className='modal_wrap'>
+              <div className='modal_img'>
+              <img className="" src=''></img>
+              이미지
+              </div >
+              <div className='modal_box'>
+                <p className='h3_title mt'>다섯번째 프로젝트 수원시청 사이트 입니다.</p>
+                <ul className='modal_texts'>
+                <li className='modal_text'>기술스택:</li>
+                <li className='modal_text'>기여도:</li>
+                <li className='modal_text'>작업기간:</li>
+                <li className='modal_text'>특징::</li>
+                </ul>
+                <div className='modal_buttons'>
+                <button className='git_button'>깃허브</button>
+                <button className='git_button'>기획서</button>
+                <button className='git_button'>사이트</button>
+                </div>
+              </div>
+              </div>
              </Modal>
             </SwiperSlide>
             </Swiper>
