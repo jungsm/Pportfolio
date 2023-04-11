@@ -54,7 +54,7 @@
 
 
 #wrap{
-  
+  position: relative;
 }
 /*헤더메뉴*/
 .menu_nav{
@@ -230,7 +230,7 @@
 .project_box{
   display: flex;
   overflow: hidden;
-  width: 1900px;
+  width: 3000px;
 }
 .project_text_box{
   display: flex;
@@ -287,12 +287,51 @@
 }
 
 
+/*모달창*/
+.ReactModal__Overlay {
+  inset: 100px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.ReactModal__Content{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.ReactModal__Content--after-open{
+  opacity: 1;
+}
+.ReactModal__Content--before-close{
+  opacity: 0;
+}
+.modal{
+  width: 50px;
+  z-index: 10;
+  float: right;
+}
+.modal_img{
+  width: 600px;
+}
+/*스와이퍼 */
+.swiper-button-prev {
+  position: absolute;
+  left: 0;
+}
 
-
-
+.swiper-button-next {
+  position: absolute;
+  right: 0;
+}
 
 /*푸터 */
-
 .section1{
   position: relative;
 display: flex;
@@ -348,7 +387,7 @@ background-color: #ffffff;
   position: absolute;
   width: 90px;
   height: 90px;
-  bottom: 80%;
+  bottom: 70%;
   right: 89%;
    animation: rotate_image2 8s linear infinite forwards alternate ; /* 애니메이션 적용 */
 }

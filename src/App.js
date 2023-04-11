@@ -1,9 +1,9 @@
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 import './rest.css'
 import './App.css';
 import './font/font.css'
 import 'swiper/css';
-
-import React, { useRef, useState } from "react";
 import { Keyboard, Pagination, Navigation } from "swiper";
 import {useMediaQuery} from 'react-responsive';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,23 +14,32 @@ export const Mobile = ({children}) => {
   
   return <>{isMobile && children}</>
 }
-
 export const PC = ({children}) => {
   const isPc = useMediaQuery({
     query : "(min-width:880px)"
-    
   });
-  
   return <>{isPc && children}</>
 }
 
 function App() {
-  
+  const [modalOpen, setModalOpen] = useState([false, false]);
+
+  const openModal = (index) => {
+    const newModalOpen = [...modalOpen];
+    newModalOpen[index] = true;
+    setModalOpen(newModalOpen);
+  };
+
+  const closeModal = (index) => {
+    const newModalOpen = [...modalOpen];
+    newModalOpen[index] = false;
+    setModalOpen(newModalOpen);
+  };
+
   return (
     <>
     <PC>
     <section id="wrap">
-     
       <div className='banner_img'>
       <div className='container'>
       <section className='header'>
@@ -119,16 +128,14 @@ function App() {
           <span className="h4_text">HTML,CSS,SCSS,JavaScript,JQuery<br/>React,React Native로 작업한 프로젝트 입니다.</span>
           <ul className="arrow_box">
             <div className='swiper-button-prev'></div>
-          <li><img src="img/arrow2.png"></img></li>
-          <li> <img src="img/arrow11.png"></img></li>
           </ul>
           </div>
         </div>
           <ul className="project_items">
           <Swiper
-      style={{width:'1600px',height:'551px'}}
+      style={{width:'900px',height:'560px'}}
       spaceBetween={50}
-      slidesPerView={3.8}
+      slidesPerView={2.2}
       keyboard={{
         enabled: true,
       }}
@@ -140,24 +147,44 @@ function App() {
     >
           <SwiperSlide>
             <li className="project_item">
-              <img src="img/prt1.png"></img>
+              <img onClick={() => openModal(0)}  src="img/prt1.png"></img>
+              <Modal isOpen={modalOpen[0]} closeTimeoutMS={300}   onRequestClose={closeModal}>
+              <img src='img/x.png' className="modal" onClick={() => closeModal(0)}></img>
+              <img className='modal_img' src='img/modal2.png'></img>
+             </Modal>
             </li>
             </SwiperSlide>
             <SwiperSlide>
             <li className="project_item">
-            <img src="img/prt2.png"></img>
+            <img onClick={() => openModal(1)} src="img/prt2.png"></img>
+            <Modal isOpen={modalOpen[1]}  onRequestClose={() => closeModal(1)}>
+              <h2>모달 1 내용</h2>
+              <img src='img/x.png' className="modal" onClick={() => closeModal(1)}></img>
+             </Modal>
             </li>
             </SwiperSlide>
             <SwiperSlide>
             <li className="project_item">
-              <img src="img/prt3.png"></img>
+              <img onClick={() => openModal(2)} src="img/prt3.png"></img>
+              <Modal isOpen={modalOpen[2]} onRequestClose={() => closeModal(2)}>
+              <h2>모달 2 내용</h2>
+              <img src='img/x.png' className="modal" onClick={() => closeModal(2)}></img>
+             </Modal>
             </li>
             </SwiperSlide>
             <SwiperSlide>
-            <li className="project_item">4</li>
+            <li onClick={() => openModal(3)} className="project_item">4</li>
+            <Modal isOpen={modalOpen[3]} onRequestClose={() => closeModal(3)}>
+              <h2>모달 3 내용</h2>
+              <img src='img/x.png' className="modal" onClick={() => closeModal(3)}></img>
+             </Modal>
             </SwiperSlide>
             <SwiperSlide>
-            <li className="project_item">5</li>
+            <li onClick={() => openModal(4)} className="project_item">5</li>
+            <Modal isOpen={modalOpen[4]} onRequestClose={() => closeModal(4)}>
+              <h2>모달 4 내용</h2>
+              <img src='img/x.png' className="modal" onClick={() => closeModal(4)}></img>
+             </Modal>
             </SwiperSlide>
             </Swiper>
           </ul>
