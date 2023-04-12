@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Lottie from "./lottie";
+/* import Lottie from "./lottie"; */
 import Modal from 'react-modal';
 import './rest.css'
 import './App.css';
@@ -45,7 +45,7 @@ function App() {
       <div className='container'>
       <section className='header'>
         <div className='menu_nav'>
-          <div className='logo'><Lottie/></div>
+          <div className='logo'>{/* <Lottie/> */}</div>
           <div className='menu_item'>
             <ul className='menu_drop'>
               <li><a>Home</a></li>
@@ -158,16 +158,16 @@ function App() {
               <div className='modal_box'>
                 <p className='h3_title mt'>첫번째 프로젝트 수원시청 사이트 입니다.</p>
                 <ul className='modal_texts'>
-                <li className='modal_text'>기술스택: <span className='modal_en_text'>HTML,CSS,JavaScript</span></li>
+                <li className='modal_text'>기술스택: <span className='modal_en_text'>HTML, CSS, JavaScript</span></li>
                 
                 <li className='modal_text'>기여도: <span className='modal_en_text'>100%</span></li>
                 <li className='modal_text'>작업기간: <span className='modal_en_text'>3주</span></li>
                 <li className='modal_text'>특징:: <span className='modal_en_text'>HTML,CSS,JavaScript</span></li>
                 </ul>
                 <div className='modal_buttons'>
-                <button className='modal_button'>깃허브</button>
-                <button className='modal_button'>기획서</button>
-                <button className='modal_button'>사이트</button>
+               <a href="https://github.com/jungsm/project1" target="_blank"><button className='modal_button'>깃허브</button></a>
+              <a href='https://github.com/jungsm/project1/blob/main/file/proposal.pdf' target="_blank"><button className='modal_button'>기획서</button></a>  
+              <a href="http://wjdtjsans0714.dothome.co.kr/" target="_blank"><button className='modal_button'>사이트</button></a>  
                 </div>
               </div>
               </div>
@@ -181,23 +181,22 @@ function App() {
 
               <img src='img/x.png' className="modal" onClick={() => closeModal(1)}></img>
               <div className='modal_wrap'>
-              <div className='modal_img'>
-              <img className="" src=''></img>
-              이미지
+              <div className='modal_img_box'>
+              <img className="modal_img" src='img/modal4.png'></img>
               </div >
               <div className='modal_box'>
                 <p className='h3_title mt'>두번째 프로젝트 수원시청 사이트 입니다.</p>
                 <ul className='modal_texts'>
-                <li className='modal_text'>기술스택:</li>
+                <li className='modal_text'>기술스택: <span className='modal_en_text'>HTML, SCSS, JS, AJAX</span></li>
                 <span className=''></span>
-                <li className='modal_text'>기여도:</li>
-                <li className='modal_text'>작업기간:</li>
+                <li className='modal_text'>기여도: <span className='modal_en_text'>25%</span></li>
+                <li className='modal_text'>작업기간:2주</li>
                 <li className='modal_text'>특징::</li>
                 </ul>
                 <div className='modal_buttons'>
-                <button className='git_button'>깃허브</button>
-                <button className='git_button'>기획서</button>
-                <button className='git_button'>사이트</button>
+               <a href='https://github.com/jungsm/bbatsueWeb'><button className='modal_button'>깃허브</button></a> 
+               <a href='https://bbatsue-web.vercel.app/index.html'><button className='modal_button'>사이트</button></a> 
+             
                 </div>
               </div>
               </div>
@@ -224,9 +223,9 @@ function App() {
                 <li className='modal_text'>특징::</li>
                 </ul>
                 <div className='modal_buttons'>
-                <button className='git_button'>깃허브</button>
-                <button className='git_button'>기획서</button>
-                <button className='git_button'>사이트</button>
+                <a href=''><button className='modal_button'>깃허브</button></a> 
+               <a href=''><button className='modal_button'>기획서</button></a> 
+               <a href=''><button className='modal_button'>사이트</button></a> 
                 </div>
               </div>
               </div>
@@ -251,9 +250,9 @@ function App() {
                 <li className='modal_text'>특징::</li>
                 </ul>
                 <div className='modal_buttons'>
-                <button className='git_button'>깃허브</button>
-                <button className='git_button'>기획서</button>
-                <button className='git_button'>사이트</button>
+                <a href=''><button className='modal_button'>깃허브</button></a> 
+               <a href=''><button className='modal_button'>기획서</button></a> 
+               <a href=''><button className='modal_button'>사이트</button></a> 
                 </div>
               </div>
               </div>
@@ -277,9 +276,9 @@ function App() {
                 <li className='modal_text'>특징::</li>
                 </ul>
                 <div className='modal_buttons'>
-                <button className='git_button'>깃허브</button>
-                <button className='git_button'>기획서</button>
-                <button className='git_button'>사이트</button>
+                <a href=''><button className='modal_button'>깃허브</button></a> 
+               <a href=''><button className='modal_button'>기획서</button></a> 
+               <a href=''><button className='modal_button'>사이트</button></a> 
                 </div>
               </div>
               </div>

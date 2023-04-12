@@ -333,13 +333,12 @@ font-weight: 500;
 .ReactModal__Content{
   border-radius: 100px 0px 0px 0px !important;
   border: 2px solid rgb(0 0 0) !important;
-  overflow: none !important;
+  overflow: hidden !important;
   opacity: 0;
-  inset: 200px !important ;
+  inset: 100px !important ;
   transition: opacity 0.5s ease-in-out;
 }
 .ReactModal__Content--after-open{
-  inset: 100px;
   opacity: 1;
 }
 .ReactModal__Content--before-close{
@@ -352,7 +351,7 @@ font-weight: 500;
 }
 .ReactModal__Content::before{
   width: 2px;
-  height: 565px;
+  height: 710px;
   z-index: 5;
   background-color: #000000;
   position: absolute;
@@ -366,6 +365,7 @@ font-weight: 500;
   float: right;
 }
 .modal_box{
+  width: 50%;
   padding-left: 4%;
 }
 .modal_text{
@@ -383,7 +383,6 @@ font-weight: 500;
 .modal_img_box{
   display: flex;
     width: 60%;
-    height: 510px;
     justify-content: center;
     align-items: center;
 }
@@ -537,7 +536,7 @@ background-color: #ffffff;
 }
 .shape05{
   position: absolute;
-  bottom: 11%;
+  bottom: 29%;
     left: 8%;
   z-index: -1;
   animation: one5 5s linear infinite;transform-origin: 50% 50%;
@@ -568,7 +567,7 @@ background-color: #ffffff;
 }
 .shape07{
   position: absolute;
-  bottom: 6%;
+  bottom: 18%;
     right:28.8%;
   z-index: -1;
   animation: box-ani 3s linear infinite forwards alternate ; /* 애니메이션 적용 */
