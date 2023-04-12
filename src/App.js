@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Lottie from "./lottie";
 import Modal from 'react-modal';
 import './rest.css'
 import './App.css';
@@ -44,7 +45,7 @@ function App() {
       <div className='container'>
       <section className='header'>
         <div className='menu_nav'>
-          <div className='logo'>logo</div>
+          <div className='logo'><Lottie/></div>
           <div className='menu_item'>
             <ul className='menu_drop'>
               <li><a>Home</a></li>
@@ -74,7 +75,7 @@ function App() {
     <img src='img/banner_shape05.png'className='shape05' ></img>
     <img src='img/banner_shape06.png'className='shape06' ></img>
     <img src='img/banner_shape07.png'className='shape07' ></img>
-    <img src="img/sun.png" className="sunimg"></img>
+    <img src="img/banner_shape04.png" className="shape04"></img>
     </div>
     <section className="about container">
       <ul className="about_items">
@@ -103,7 +104,7 @@ function App() {
           <p className="kr_text">2020.03월~2023.02월</p>
           <p className="kr_text">경남도립거창대학교 컴퓨터공학 2년제 졸업</p>
           <p className="kr_text">2022.11월~2023.05월</p>
-          <p className="kr_text">프로젝트 기반 프론트엔드(React&Vue) 웹&앱 SW개발자 양성과정</p>
+          <p className="kr_text">프로젝트 기반 프론트엔드(React&Vue)<br/> 웹&앱 SW개발자 양성과정</p>
           </div>
         </li>
         <li className="about_item">
@@ -151,22 +152,22 @@ function App() {
               <Modal isOpen={modalOpen[0]} closeTimeoutMS={300}   onRequestClose={closeModal}>
               <img src='img/x.png' className="modal" onClick={() => closeModal(0)}></img>
               <div className='modal_wrap'>
-              <div className='modal_img'>
-              <img className="" src=''></img>
-              이미지
+              <div className='modal_img_box'>
+              <img className="modal_img" src='img/modal3.png'></img>
               </div >
               <div className='modal_box'>
                 <p className='h3_title mt'>첫번째 프로젝트 수원시청 사이트 입니다.</p>
                 <ul className='modal_texts'>
-                <li className='modal_text'>기술스택:</li>
-                <li className='modal_text'>기여도:</li>
-                <li className='modal_text'>작업기간:</li>
-                <li className='modal_text'>특징::</li>
+                <li className='modal_text'>기술스택: <span className='modal_en_text'>HTML,CSS,JavaScript</span></li>
+                
+                <li className='modal_text'>기여도: <span className='modal_en_text'>100%</span></li>
+                <li className='modal_text'>작업기간: <span className='modal_en_text'>3주</span></li>
+                <li className='modal_text'>특징:: <span className='modal_en_text'>HTML,CSS,JavaScript</span></li>
                 </ul>
                 <div className='modal_buttons'>
-                <button className='git_button'>깃허브</button>
-                <button className='git_button'>기획서</button>
-                <button className='git_button'>사이트</button>
+                <button className='modal_button'>깃허브</button>
+                <button className='modal_button'>기획서</button>
+                <button className='modal_button'>사이트</button>
                 </div>
               </div>
               </div>
@@ -188,6 +189,7 @@ function App() {
                 <p className='h3_title mt'>두번째 프로젝트 수원시청 사이트 입니다.</p>
                 <ul className='modal_texts'>
                 <li className='modal_text'>기술스택:</li>
+                <span className=''></span>
                 <li className='modal_text'>기여도:</li>
                 <li className='modal_text'>작업기간:</li>
                 <li className='modal_text'>특징::</li>

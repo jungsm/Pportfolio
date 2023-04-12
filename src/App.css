@@ -4,6 +4,14 @@
   font-weight: bold;
   font-size: 46px;
 }
+.modal_en_text{
+  font-family: "AppleSDGothic";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  color: #f89e52;
+}
+
 .h2_title{
   text-align: center;
   font-family: "AppleSDGothic";
@@ -131,6 +139,19 @@
 }
 
 .git_button{
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+  font-family: "AppleSDGothic";
+font-style: normal;
+font-weight: 500;
+  border: none;
+  margin-right: 35px;
+  border-radius: 20px;
+  background-color: #3482ff;
+  color: #ffffff;
+}
+.modal_button{
   width: 150px;
   height: 70px;
   font-size: 20px;
@@ -139,7 +160,7 @@ font-style: normal;
 font-weight: 500;
   border: none;
   margin-right: 35px;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #3482ff;
   color: #ffffff;
 }
@@ -301,7 +322,6 @@ font-weight: 500;
   transition: opacity 0.3s ease-in-out;
 }
 .ReactModal__Overlay--after-open{
-  
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
@@ -311,7 +331,9 @@ font-weight: 500;
   transition: opacity 0.5s ease-in-out;
 }
 .ReactModal__Content{
-  overflow: hidden;
+  border-radius: 100px 0px 0px 0px !important;
+  border: 2px solid rgb(0 0 0) !important;
+  overflow: none !important;
   opacity: 0;
   inset: 200px !important ;
   transition: opacity 0.5s ease-in-out;
@@ -324,8 +346,19 @@ font-weight: 500;
   opacity: 0;
 }
 .modal_wrap{
+  position: relative;
   display: flex;
   overflow: hidden;
+}
+.ReactModal__Content::before{
+  width: 2px;
+  height: 565px;
+  z-index: 5;
+  background-color: #000000;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 52%;
 }
 .modal{
   width: 50px;
@@ -347,13 +380,15 @@ font-weight: 500;
   margin-top: 15%;
   padding-left: 50px;
 }
-.modal_img{
+.modal_img_box{
   display: flex;
     width: 60%;
     height: 510px;
-    background-color: #afc9f3;
     justify-content: center;
     align-items: center;
+}
+.modal_img{
+  width: 100%;
 }
 /*스와이퍼 */
 .swiper-button-prev {
