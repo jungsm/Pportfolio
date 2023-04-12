@@ -177,7 +177,7 @@ function App() {
             <li className="project_item">
             <img onClick={() => openModal(1)} src="img/prt2.png"></img>
             <Modal isOpen={modalOpen[1]}  onRequestClose={() => closeModal(1)}>
-              <h2>모달 1 내용</h2>
+
               <img src='img/x.png' className="modal" onClick={() => closeModal(1)}></img>
               <div className='modal_wrap'>
               <div className='modal_img'>
@@ -206,7 +206,6 @@ function App() {
             <li className="project_item">
               <img onClick={() => openModal(2)} src="img/prt3.png"></img>
               <Modal isOpen={modalOpen[2]} onRequestClose={() => closeModal(2)}>
-              <h2>모달 2 내용</h2>
               <img src='img/x.png' className="modal" onClick={() => closeModal(2)}></img>
               
               <div className='modal_wrap'>
@@ -235,7 +234,6 @@ function App() {
             <SwiperSlide>
             <li onClick={() => openModal(3)} className="project_item">4</li>
             <Modal isOpen={modalOpen[3]} onRequestClose={() => closeModal(3)}>
-              <h2>모달 3 내용</h2>
               <img src='img/x.png' className="modal" onClick={() => closeModal(3)}></img>
               <div className='modal_wrap'>
               <div className='modal_img'>
@@ -262,7 +260,6 @@ function App() {
             <SwiperSlide>
             <li onClick={() => openModal(4)} className="project_item">5</li>
             <Modal isOpen={modalOpen[4]} onRequestClose={() => closeModal(4)}>
-              <h2>모달 4 내용</h2>
               <img src='img/x.png' className="modal" onClick={() => closeModal(4)}></img>
               <div className='modal_wrap'>
               <div className='modal_img'>

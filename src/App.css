@@ -16,7 +16,7 @@
   font-family: "AppleSDGothic";
   font-weight: bold;
   font-size: 32px;
-  margin-bottom: 3%;
+  margin-bottom: 8%;
 }
 .mt{
   margin-top: 5%;
@@ -60,6 +60,7 @@
 
 #wrap{
   position: relative;
+  overflow: hidden;
 }
 /*헤더메뉴*/
 .menu_nav{
@@ -130,7 +131,7 @@
 }
 
 .git_button{
-  width: 200px;
+  width: 150px;
   height: 70px;
   font-size: 20px;
   font-family: "AppleSDGothic";
@@ -161,7 +162,7 @@ font-weight: 500;
 .about .about_items .about_item{
   width: 30%;
   height: 330px;
-  margin-right: 35px;
+  margin: 35px;
   padding:30px 40px 0 40px;
   border: 1px solid #f3f3f3;
   border-radius:  20px;
@@ -332,7 +333,7 @@ font-weight: 500;
   float: right;
 }
 .modal_box{
-  padding-left: 3%;
+  padding-left: 4%;
 }
 .modal_text{
   padding: 8px 0px;
@@ -342,13 +343,14 @@ font-weight: 500;
   font-size: 24px;
 }
 .modal_buttons{
-  margin-top: 30%;
-  padding-left: 47px;
+  display: flex;
+  margin-top: 15%;
+  padding-left: 50px;
 }
 .modal_img{
   display: flex;
     width: 60%;
-    height: 870px;
+    height: 510px;
     background-color: #afc9f3;
     justify-content: center;
     align-items: center;
