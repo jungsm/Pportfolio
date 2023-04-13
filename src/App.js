@@ -150,26 +150,44 @@ function App() {
             <li className="project_item">
               <img onClick={() => openModal(0)}  src="img/prt1.png"></img>
               <Modal isOpen={modalOpen[0]} closeTimeoutMS={300}   onRequestClose={closeModal}>
-              <img src='img/x.png' className="modal" onClick={() => closeModal(0)}></img>
+              <img  src="img/x.png" className="Exit_img" onClick={() => closeModal(0)}></img>
               <div className='modal_wrap'>
-              <div className='modal_img_box'>
-              <img className="modal_img" src='img/modal3.png'></img>
-              </div >
-              <div className='modal_box'>
-                <p className='h3_title mt'>첫번째 프로젝트 수원시청 사이트 입니다.</p>
-                <ul className='modal_texts'>
-                <li className='modal_text'>기술스택: <span className='modal_en_text'>HTML, CSS, JavaScript</span></li>
-                
-                <li className='modal_text'>기여도: <span className='modal_en_text'>100%</span></li>
-                <li className='modal_text'>작업기간: <span className='modal_en_text'>3주</span></li>
-                <li className='modal_text'>특징:: <span className='modal_en_text'>HTML,CSS,JavaScript</span></li>
-                </ul>
-                <div className='modal_buttons'>
-               <a href="https://github.com/jungsm/project1" target="_blank"><button className='modal_button'>깃허브</button></a>
-              <a href='https://github.com/jungsm/project1/blob/main/file/proposal.pdf' target="_blank"><button className='modal_button'>기획서</button></a>  
-              <a href="http://wjdtjsans0714.dothome.co.kr/" target="_blank"><button className='modal_button'>사이트</button></a>  
+                <div className='modal_container'>
+                <div className='modal_header'>
+                  <div className='modal_title'>
+                  <p className='modal_title_text'>Portfolio Details</p>
+                  </div>
+                  <div className='modal_title2'>
+                    <p className='modal_title_text2'>
+                      <span className='h4_text'>Project01</span> / <span className='kr_text'>수원시청</span></p>
+                    </div>
+                    <div className='modal_buttons'>
+                  <a href="https://github.com/jungsm/SuwonSicheong/blob/main/file/proposal.pdf" ><button className='modal_button'>기획서보기</button></a>   
+                  <a href="https://github.com/jungsm/SuwonSicheong"><button className='modal_button'>깃허브보기</button></a>
+                  <a href="http://wjdtjsans0714.dothome.co.kr/"><button  className='modal_button'>사이트보기</button></a>
                 </div>
-              </div>
+                </div>
+                <div className='modal_main'>
+                <div className='modal_left'>
+                  <div className='modal_imgbox'>
+                    <img className='modal_img' src="img/modal3.png"></img>
+                  </div>
+                </div>
+                <div className='modal_right'>
+                  <div className='modal_textbox'>
+                    <ul className='modal_text kr_text'>
+                      <li><span>구현기술</span><div className='kr_text2'>: HTML ,CSS ,JavaScript</div></li>
+                      <li><span>작업기간</span><div className='kr_text2'>: 3주</div></li>
+                      <li><span>배포매체</span><div className='kr_text2'>: 웹(WEB)</div></li>
+                      <li><span>본인기여도</span><div className='kr_text2'>: 100%</div></li>
+                      <li><span>브라우저 호환성 </span><div className='kr_text2'>: 크롬,익스플로러</div></li>
+                      <li><span>페이지수</span><div className='kr_text2'>: 메인1페이지</div></li>
+                      <li><span>특 징</span>:</li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                </div>
               </div>
              </Modal>
             </li>
@@ -177,28 +195,45 @@ function App() {
             <SwiperSlide>
             <li className="project_item">
             <img onClick={() => openModal(1)} src="img/prt2.png"></img>
-            <Modal isOpen={modalOpen[1]}  onRequestClose={() => closeModal(1)}>
-
-              <img src='img/x.png' className="modal" onClick={() => closeModal(1)}></img>
+            <Modal isOpen={modalOpen[1]}  closeTimeoutMS={300}  onRequestClose={() => closeModal(1)}>
+              <img src='img/x.png' className="Exit_img" onClick={() => closeModal(1)}></img>
               <div className='modal_wrap'>
-              <div className='modal_img_box'>
-              <img className="modal_img" src='img/modal4.png'></img>
-              </div >
-              <div className='modal_box'>
-                <p className='h3_title mt'>두번째 프로젝트 수원시청 사이트 입니다.</p>
-                <ul className='modal_texts'>
-                <li className='modal_text'>기술스택: <span className='modal_en_text'>HTML, SCSS, JS, AJAX</span></li>
-                <span className=''></span>
-                <li className='modal_text'>기여도: <span className='modal_en_text'>25%</span></li>
-                <li className='modal_text'>작업기간:2주</li>
-                <li className='modal_text'>특징::</li>
-                </ul>
-                <div className='modal_buttons'>
-               <a href='https://github.com/jungsm/bbatsueWeb'><button className='modal_button'>깃허브</button></a> 
-               <a href='https://bbatsue-web.vercel.app/index.html'><button className='modal_button'>사이트</button></a> 
-             
+                <div className='modal_container'>
+                <div className='modal_header'>
+                  <div className='modal_title'>
+                  <p className='modal_title_text'>Portfolio Details</p>
+                  </div>
+                  <div className='modal_title2'>
+                    <p className='modal_title_text2'>
+                      <span className='h4_text'>Project01</span> / <span className='kr_text'>뺏슈 </span></p>
+                    </div>
+                    <div className='modal_buttons'>
+                    <a href="https://github.com/jungsm/bbatsueWeb/blob/main/file/%EB%BA%8F%EC%8A%88_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C_%EC%B5%9C%EC%A2%85%EC%88%98%EC%A0%95%EB%B3%B8.pdf" ><button className='modal_button'>기획서보기</button></a>   
+                  <a href="https://github.com/jungsm/bbatsueWeb"><button className='modal_button'>깃허브보기</button></a>
+                  <a href="https://bbatsue-web.vercel.app/"><button  className='modal_button'>사이트보기</button></a>
                 </div>
-              </div>
+                </div>
+                <div className='modal_main'>
+                <div className='modal_left'>
+                  <div className='modal_imgbox'>
+                    <img className='modal_img' src='img/modal4.png'></img>
+                  </div>
+                </div>
+                <div className='modal_right'>
+                  <div className='modal_textbox'>
+                    <ul className='modal_text kr_text'>
+                      <li><span>구현기술</span><div className='kr_text2'>: HTML,SCSS,AJAX,Bootstrap,JA</div></li>
+                      <li><span>작업기간</span><div className='kr_text2'>: 2주</div></li>
+                      <li><span>배포매체</span><div className='kr_text2'>: 웹(WEB)</div></li>
+                      <li><span>본인기여도</span><div className='kr_text2'>: 25%</div></li>
+                      <li><span>브라우저 호환성 </span><div className='kr_text2'>: 크롬,익스플로러</div></li>
+                      <li><span>페이지수</span><div className='kr_text2'>: 메인페이지,서브페이지4개</div></li>
+                      <li><span>특 징</span>:팀프로젝트</li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                </div>
               </div>
              </Modal>
             </li>
@@ -206,81 +241,134 @@ function App() {
             <SwiperSlide>
             <li className="project_item">
               <img onClick={() => openModal(2)} src="img/prt3.png"></img>
-              <Modal isOpen={modalOpen[2]} onRequestClose={() => closeModal(2)}>
-              <img src='img/x.png' className="modal" onClick={() => closeModal(2)}></img>
-              
+              <Modal isOpen={modalOpen[2] } closeTimeoutMS={300}  onRequestClose={() => closeModal(2)}>
+              <img src='img/x.png' className="Exit_img" onClick={() => closeModal(2)}></img>
               <div className='modal_wrap'>
-              <div className='modal_img'>
-              <img className="" src=''></img>
-              이미지
-              </div >
-              <div className='modal_box'>
-                <p className='h3_title mt'>세번째 프로젝트 수원시청 사이트 입니다.</p>
-                <ul className='modal_texts'>
-                <li className='modal_text'>기술스택:</li>
-                <li className='modal_text'>기여도:</li>
-                <li className='modal_text'>작업기간:</li>
-                <li className='modal_text'>특징::</li>
-                </ul>
-                <div className='modal_buttons'>
-                <a href=''><button className='modal_button'>깃허브</button></a> 
-               <a href=''><button className='modal_button'>기획서</button></a> 
-               <a href=''><button className='modal_button'>사이트</button></a> 
+                <div className='modal_container'>
+                <div className='modal_header'>
+                  <div className='modal_title'>
+                  <p className='modal_title_text'>Portfolio Details</p>
+                  </div>
+                  <div className='modal_title2'>
+                    <p className='modal_title_text2'>
+                      <span className='h4_text'>Project01</span> / <span className='kr_text'>ANBD</span></p>
+                    </div>
+                    <div className='modal_buttons'>
+                    <a href="https://file.notion.so/f/s/5b5b3e1a-93e2-4401-aeb7-17a4f1749521/2%EC%A1%B0(ANBD_).pdf?id=edd53c80-771d-4d13-8468-d94321a0871d&table=block&spaceId=f2b063ab-5763-4522-82a6-f18f4aaa1c70&expirationTimestamp=1681461872045&signature=9xf4bxOQf60XxtPVhDSy-XPar-S4PzMRn6A8xotSbY8&downloadName=2%EC%A1%B0%28ANBD_%29.pdf" ><button className='modal_button'>기획서보기</button></a>   
+                  <a href="https://github.com/jungsm/team-project-ANBD"><button className='modal_button'>깃허브보기</button></a>
+                  <a href="https://anbd.vercel.app"><button  className='modal_button'>사이트보기</button></a>
                 </div>
-              </div>
+                </div>
+                <div className='modal_main'>
+                <div className='modal_left'>
+                  <div className='modal_imgbox'>
+                  <img className='modal_img' src='img/prt3.png'></img>
+                  </div>
+                </div>
+                <div className='modal_right'>
+                  <div className='modal_textbox'>
+                    <ul className='modal_text kr_text'>
+                      <li><span>구현기술</span><div className='kr_text2'>: React,SCSS,Node,sqLite</div></li>
+                      <li><span>작업기간</span><div className='kr_text2'>: 3주</div></li>
+                      <li><span>배포매체</span><div className='kr_text2'>: 웹(WEB)</div></li>
+                      <li><span>본인기여도</span><div className='kr_text2'>: 35%</div></li>
+                      <li><span>브라우저 호환성 </span><div className='kr_text2'>: 크롬,익스플로러</div></li>
+                      <li><span>페이지수</span><div className='kr_text2'>: 메인페이지,서브페이지5개</div></li>
+                      <li><span>특 징</span>:</li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                </div>
               </div>
              </Modal>
             </li>
             </SwiperSlide>
             <SwiperSlide>
-            <li onClick={() => openModal(3)} className="project_item">4</li>
-            <Modal isOpen={modalOpen[3]} onRequestClose={() => closeModal(3)}>
-              <img src='img/x.png' className="modal" onClick={() => closeModal(3)}></img>
+            <img src="img/prt4.png" onClick={() => openModal(3)} className="project_item"></img>
+            <Modal isOpen={modalOpen[3]} closeTimeoutMS={300}  onRequestClose={() => closeModal(3)}>
+            <img src='img/x.png' className="Exit_img" onClick={() => closeModal(3)}></img>
               <div className='modal_wrap'>
-              <div className='modal_img'>
-              <img className="" src=''></img>
-              이미지
-              </div >
-              <div className='modal_box'>
-                <p className='h3_title mt'>네번째 프로젝트 수원시청 사이트 입니다.</p>
-                <ul className='modal_texts'>
-                <li className='modal_text'>기술스택:</li>
-                <li className='modal_text'>기여도:</li>
-                <li className='modal_text'>작업기간:</li>
-                <li className='modal_text'>특징::</li>
-                </ul>
-                <div className='modal_buttons'>
-                <a href=''><button className='modal_button'>깃허브</button></a> 
-               <a href=''><button className='modal_button'>기획서</button></a> 
-               <a href=''><button className='modal_button'>사이트</button></a> 
+                <div className='modal_container'>
+                <div className='modal_header'>
+                  <div className='modal_title'>
+                  <p className='modal_title_text'>Portfolio Details</p>
+                  </div>
+                  <div className='modal_title2'>
+                    <p className='modal_title_text2'>
+                      <span className='h4_text'>Project01</span> / <span className='kr_text'>포트폴리오</span></p>
+                    </div>
+                    <div className='modal_buttons'>
+                    <a href="https://github.com/jungsm/SuwonSicheong/blob/main/file/proposal.pdf" ><button className='modal_button'>기획서보기</button></a>   
+                  <a href="https://github.com/jungsm/SuwonSicheong"><button className='modal_button'>깃허브보기</button></a>
+                  <a href="http://wjdtjsans0714.dothome.co.kr/"><button  className='modal_button'>사이트보기</button></a>
                 </div>
-              </div>
+                </div>
+                <div className='modal_main'>
+                <div className='modal_left'>
+                  <div className='modal_imgbox'>
+                  <img className='modal_img' src='img/modal6.png'></img>
+                  </div>
+                </div>
+                <div className='modal_right'>
+                  <div className='modal_textbox'>
+                    <ul className='modal_text kr_text'>
+                      <li><span>구현기술</span><div className='kr_text2'>: React</div></li>
+                      <li><span>작업기간</span><div className='kr_text2'>: 3주</div></li>
+                      <li><span>배포매체</span><div className='kr_text2'>: 웹(WEB)</div></li>
+                      <li><span>본인기여도</span><div className='kr_text2'>: 100%</div></li>
+                      <li><span>브라우저 호환성 </span><div className='kr_text2'>: 크롬,익스플로러</div></li>
+                      <li><span>페이지수</span><div className='kr_text2'>: 메인페이지</div></li>
+                      <li><span>특 징</span>:</li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                </div>
               </div>
              </Modal>
             </SwiperSlide>
             <SwiperSlide>
             <li onClick={() => openModal(4)} className="project_item">5</li>
-            <Modal isOpen={modalOpen[4]} onRequestClose={() => closeModal(4)}>
-              <img src='img/x.png' className="modal" onClick={() => closeModal(4)}></img>
+            <Modal isOpen={modalOpen[4]} closeTimeoutMS={300}  onRequestClose={() => closeModal(4)}>
+            <img src='img/x.png' className="Exit_img" onClick={() => closeModal(4)}></img>
               <div className='modal_wrap'>
-              <div className='modal_img'>
-              <img className="" src=''></img>
-              이미지
-              </div >
-              <div className='modal_box'>
-                <p className='h3_title mt'>다섯번째 프로젝트 수원시청 사이트 입니다.</p>
-                <ul className='modal_texts'>
-                <li className='modal_text'>기술스택:</li>
-                <li className='modal_text'>기여도:</li>
-                <li className='modal_text'>작업기간:</li>
-                <li className='modal_text'>특징::</li>
-                </ul>
-                <div className='modal_buttons'>
-                <a href=''><button className='modal_button'>깃허브</button></a> 
-               <a href=''><button className='modal_button'>기획서</button></a> 
-               <a href=''><button className='modal_button'>사이트</button></a> 
+                <div className='modal_container'>
+                <div className='modal_header'>
+                  <div className='modal_title'>
+                  <p className='modal_title_text'>Portfolio Details</p>
+                  </div>
+                  <div className='modal_title2'>
+                    <p className='modal_title_text2'>
+                      <span className='h4_text'>Project01</span> / <span className='kr_text'></span></p>
+                    </div>
+                    <div className='modal_buttons'>
+                    <a href="https://github.com/jungsm/SuwonSicheong/blob/main/file/proposal.pdf" ><button className='modal_button'>기획서보기</button></a>   
+                  <a href="https://github.com/jungsm/SuwonSicheong"><button className='modal_button'>깃허브보기</button></a>
+                  <a href="http://wjdtjsans0714.dothome.co.kr/"><button  className='modal_button'>사이트보기</button></a>
                 </div>
-              </div>
+                </div>
+                <div className='modal_main'>
+                <div className='modal_left'>
+                  <div className='modal_imgbox'>
+                    <img></img>
+                  </div>
+                </div>
+                <div className='modal_right'>
+                  <div className='modal_textbox'>
+                    <ul className='modal_text kr_text'>
+                      <li><span>구현기술</span><div className='kr_text2'>: HTML ,CSS ,JavaScript</div></li>
+                      <li><span>작업기간</span><div className='kr_text2'>: 3주</div></li>
+                      <li><span>배포매체</span><div className='kr_text2'>: 웹(WEB)</div></li>
+                      <li><span>본인기여도</span><div className='kr_text2'>: 100%</div></li>
+                      <li><span>브라우저 호환성 </span><div className='kr_text2'>: 크롬,익스플로러</div></li>
+                      <li><span>페이지수</span><div className='kr_text2'>: 메인1페이지</div></li>
+                      <li><span>특 징</span>:</li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                </div>
               </div>
              </Modal>
             </SwiperSlide>

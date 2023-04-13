@@ -29,6 +29,12 @@
 .mt{
   margin-top: 5%;
 }
+.kr_text2{
+  display: inline;
+  font-family: "AppleSDGothic";
+  font-weight: 100;
+  font-size: 16px;
+}
 .kr_text{
   font-family: "AppleSDGothic";
   font-weight: 100;
@@ -151,19 +157,7 @@ font-weight: 500;
   background-color: #3482ff;
   color: #ffffff;
 }
-.modal_button{
-  width: 150px;
-  height: 70px;
-  font-size: 20px;
-  font-family: "AppleSDGothic";
-font-style: normal;
-font-weight: 500;
-  border: none;
-  margin-right: 35px;
-  border-radius: 20px;
-  background-color: #3482ff;
-  color: #ffffff;
-}
+
 .right_textbox{
   padding-top: 50%;
 }
@@ -289,7 +283,7 @@ font-weight: 500;
   width: 370px;
   height: 515px;
   border: 18px solid #f3f7fa;
-  border-radius: 40px;
+  border-radius: 42px;
 }
 .project_item img{
   width: 100%;
@@ -316,10 +310,10 @@ font-weight: 500;
 
 /*모달창*/
 .ReactModal__Overlay {
- 
   z-index: 10;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  background-color: rgb(125 125 125 / 80%) !important;
 }
 .ReactModal__Overlay--after-open{
   opacity: 1;
@@ -331,11 +325,15 @@ font-weight: 500;
   transition: opacity 0.5s ease-in-out;
 }
 .ReactModal__Content{
-  border-radius: 100px 0px 0px 0px !important;
-  border: 2px solid rgb(0 0 0) !important;
-  overflow: hidden !important;
-  opacity: 0;
-  inset: 100px !important ;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+position: absolute;
+width: 858px;
+    height: 771px;
+margin: 0 auto !important;
+border-radius: 20px !important;
+border: none !important;
   transition: opacity 0.5s ease-in-out;
 }
 .ReactModal__Content--after-open{
@@ -344,50 +342,108 @@ font-weight: 500;
 .ReactModal__Content--before-close{
   opacity: 0;
 }
+.Exit_img{
+  position: relative;
+  left: 90%;
+}
 .modal_wrap{
   position: relative;
   display: flex;
+  width: 100%;
   overflow: hidden;
+  justify-content: center;
 }
-.ReactModal__Content::before{
-  width: 2px;
-  height: 710px;
-  z-index: 5;
-  background-color: #000000;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 52%;
+.modal_container{
+  max-width: 880px;
 }
-.modal{
-  width: 50px;
-  z-index: 10;
-  float: right;
+.modal_header{
+  margin:0 124px
 }
-.modal_box{
-  width: 50%;
-  padding-left: 4%;
+.modal_title{
+  display: flex;
+  justify-content :center;
 }
-.modal_text{
-  padding: 8px 0px;
-  font-family: "AppleSDGothic";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 24px;
+.modal_title_text{
+  font-size: 32px;
+  font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: bold;
+}
+.modal_title2{
+  margin: 7% auto;
+  display: flex;
+ width: 35%;
+ height: 40px;
+ background-color: #edeef1;
+ border-radius: 20px;
+ align-items: center;
+ justify-content: center;
 }
 .modal_buttons{
   display: flex;
-  margin-top: 15%;
-  padding-left: 50px;
+  width: 100%;
 }
-.modal_img_box{
+.modal_button{
   display: flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid  #24292E;
+  border-radius: 20px;
+  font-family: "AppleSDGothic";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  padding-top: 5px;
+}
+.modal_buttons a:nth-child(2){
+  margin: 0 32px;
+}
+.modal_main{
+  margin-top: 9%;
+  display: flex;
+  width: 100%;
+}
+.modal_left{
+  width: 50%;
+}
+.modal_imgbox{
+  width: 396px;
+  height: 404px;
 }
 .modal_img{
   width: 100%;
+  height: 98%;
+  border-radius: 20px;
+  border: 1px solid #d1d1d1
+}
+.modal_right{
+  padding-left: 60px;
+}
+.modal_right .kr_text{
+    font-weight: 400;
+}
+.modal_text span{
+  letter-spacing: 13px
+}
+.modal_text li{
+  list-style: disc;
+  line-height: 46px;
+  padding-left: 10px;
+}
+.modal_text ul li{
+  letter-spacing: none !important;
+}
+.modal_text li:nth-child(4) span{
+  letter-spacing: 7.8px;
+}
+.modal_text li:nth-child(5) span{
+  letter-spacing: 0.4px;
+}
+.modal_text li:nth-child(7) span{
+  letter-spacing: 25.3px;
 }
 /*스와이퍼 */
 .swiper-button-prev {
