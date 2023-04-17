@@ -480,6 +480,33 @@ background-color: #ffffff;
 
 
 
+/*스킬바 */
+
+.skillContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+}
+
+.name {
+  width: 20%;
+  text-align: center;
+}
+
+.fillContainer {
+  width: 70%;
+}
+
+.fill {
+  background-color: red;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.value {
+  width: 10%;
+  text-align: right;
+}
 
 
 
