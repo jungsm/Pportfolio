@@ -28,17 +28,25 @@ export const PC = ({children}) => {
 function App() {
   const skills = [
     {
-      name: "java",
+      name: "HTML",
+      value: "90%"
+    },
+    {
+      name: "CSS",
+      value: "90%"
+    },
+    {
+      name: "Javascript",
+      value: "90%"
+    },
+    {
+      name: "REACT",
+      value: "80%"
+    },
+    {
+      name: "Jquery",
       value: "70%"
     },
-    {
-      name: "python",
-      value: "50%"
-    },
-    {
-      name: "graphQL",
-      value: "90%"
-    }
   ];
   
   const [modalOpen, setModalOpen] = useState([false, false]);
@@ -314,7 +322,7 @@ function App() {
         </div>
     </section>
     <section className="section1">
-    <div>
+    <div className='skillbar container'>
       {skills.map((x, index) => {
         return <Skill name={x.name} value={x.value} />;
       })}

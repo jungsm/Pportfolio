@@ -482,13 +482,20 @@ background-color: #ffffff;
 
 /*스킬바 */
 
+.skillbar{
+  width: 100%;
+}
 .skillContainer {
   display: flex;
   flex-direction: row;
   margin: 1em;
+  height: 1.5em;
 }
 
 .name {
+  font-family: "AppleSDGothic";
+  font-style: normal;
+  font-weight: 500;
   width: 20%;
   text-align: center;
 }
@@ -498,13 +505,13 @@ background-color: #ffffff;
 }
 
 .fill {
-  background-color: red;
+  background-color: #f89e52;
   height: 100%;
   border-radius: 5px;
 }
 
 .value {
-  width: 10%;
+  width: 0%;
   text-align: right;
 }
 
