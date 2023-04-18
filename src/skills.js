@@ -14,7 +14,7 @@ const Skill = props => {
       <div className="fillContainer">
         <animated.div className="fill" style={computedWidth} />
       </div>
-      <div className="value">{props.value}</div>
+      <div className="value h4_text">{props.value}</div>
     </div>
   );
 };
