@@ -34,6 +34,12 @@
   font-weight: 100;
   font-size: 16px;
 }
+.kr_text4{
+  display: inline;
+  font-family: "AppleSDGothic";
+  font-weight: 100;
+  font-size: 45px;
+}
 .kr_text{
   font-family: "AppleSDGothic";
   font-weight: 100;
@@ -168,18 +174,23 @@
   padding-top: 20%;
 }
 
-.git_button{
-  width: 200px;
-  height: 70px;
+.button{
+  width: 160px;
+  height: 50px;
   font-size: 20px;
   font-family: "AppleSDGothic";
-font-style: normal;
-font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
   border: none;
-  margin-right: 35px;
-  border-radius: 20px;
+  margin-right: 15px;
   background-color: #3482ff;
   color: #ffffff;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.button:hover{
+  background-color: #f89e52;
 }
 
 .right_textbox{
@@ -280,7 +291,7 @@ font-weight: 500;
 .project_text_box{
   display: flex;
   align-items: center;
-  padding-right: 5%;
+  padding-right: 2%;
 }
 .project_text{
   width: 463px;
@@ -425,6 +436,12 @@ border: none !important;
   font-size: 16px;
   padding-top: 5px;
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+}
+.modal_button:hover{
+background-color: #292f3f;
+color: #ffffff;
 }
 
 .modal_main{
@@ -875,7 +892,7 @@ background-color: #ffffff;
 .shape07{
   position: absolute;
   bottom: 18%;
-    right:28.8%;
+    right:18.8%;
   z-index: -1;
   animation: box-ani 3s linear infinite forwards alternate ; /* 애니메이션 적용 */
 }

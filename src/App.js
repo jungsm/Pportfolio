@@ -6,7 +6,6 @@ import './App.css';
 import './font/font.css'
 import 'swiper/css';
 import { Keyboard, Pagination, Navigation } from "swiper";
-import { useSpring, animated } from 'react-spring';
 import {useMediaQuery} from 'react-responsive';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -94,7 +93,8 @@ function App() {
           <div className='right_textbox'>
             <p className='h1_title'>해와 달처럼<br></br> 조화로운 코드를 구현하는<br/> 프론트엔드 정선문 입니다<p/> </p>
             <div className="main_button_box">
-            <a href='https://github.com/jungsm?tab=repositories'><button className='git_button'>깃허브</button></a>
+            <a href='https://github.com/jungsm?tab=repositories'><button className='button'><span className='kr_text'>깃허브</span></button></a>
+            <a href='https://github.com/jungsm?tab=repositories'><button className='button'><span className='kr_text'>이력서</span></button></a>
             </div>
         </div>
         </div>  
@@ -154,7 +154,7 @@ function App() {
         <div className="project_text_box">
           <div className="project_text">
             <span className="h3_text">프로젝트</span>
-          <span className="h1_text">이미지를 클릭 시 해당 프로젝트의 상세정보를<br/> 확인하실 수 있습니다.</span> <br/>
+          <span className="kr_text4">이미지를 클릭 시 해당 프로젝트의 상세정보를<br/> 확인하실 수 있습니다.</span> <br/>
           <span className="h4_text">HTML,CSS,SCSS,JavaScript,JQuery<br/>React,React Native로 작업한 프로젝트 입니다.</span>
           <ul className="arrow_box">
             <div className='swiper-button-prev'></div>
@@ -207,7 +207,7 @@ function App() {
                       <li><span>구현기</span>술<text className='h5_text'> : <br/>HTML,CSS,JavaScript</text></li>
                       <li><span>작업기</span>술<text className='kr_text3'> : 3주</text></li>
                       <li><span>배포매</span>체<text className='kr_text3'> : 웹(WEB)</text></li>
-                      <li><span>본인기여</span>도<text className='h5_text'> : 100%</text></li>
+                      <li><span>본인기여</span>도<text className='kr_text3'> : 총인원 1명 100%</text></li>
                       <li><span>브라우저 </span>호환성<text className='kr_text3'> : 크롬,익스플로어</text></li>
                       <li><span>페이지</span>수<text className='kr_text3'> : 메인페이지</text></li>
                       <li><span>특</span>징<text className='kr_text3'> : <br/>웹표준 ,PHP 게시판,좌우슬라이드 버튼크기 개선 <br/>날씨 API 사용</text></li>
@@ -251,7 +251,7 @@ function App() {
                       <li><span>구현기</span>술<text className='h5_text'> : <br/>HTML5, SCSS, JS, Bootstrap, AJAX</text></li>
                       <li><span>작업기</span>술<text className='kr_text3'> : 2주</text></li>
                       <li><span>배포매</span>체<text className='kr_text3'> : 웹(WEB)</text></li>
-                      <li><span>본인기여</span>도<text className='h5_text'> : 25%</text></li>
+                      <li><span>본인기여</span>도<text className='h5_text'> : 총인원 4명 25%</text></li>
                       <li><span>브라우저 </span>호환성<text className='kr_text3'> : 크롬,익스플로어</text></li>
                       <li><span>페이지</span>수<text className='kr_text3'> : 메인페이지 1개, 서브페이지 4개</text></li>
                       <li><span>특</span>징<text className='kr_text3'> : <br/>반응형, 부트스트랩 그리드 시스템 사용<br/>각자 브랜치를 나눠서 협업</text></li>
@@ -294,7 +294,7 @@ function App() {
                       <li><span>구현기</span>술<text className='h5_text'> : <br/>React, SCSS, Node, sqlLite, Ant Design</text></li>
                       <li><span>작업기</span>술<text className='kr_text3'> : 3주</text></li>
                       <li><span>배포매</span>체<text className='kr_text3'> : 웹(WEB),모바일</text></li>
-                      <li><span>본인기여</span>도<text className='h5_text'> : 25%</text></li>
+                      <li><span>본인기여</span>도<text className='kr_text'> : 총인원 4명 25%</text></li>
                       <li><span>브라우저 </span>호환성<text className='kr_text3'> : 크롬,익스플로어</text></li>
                       <li><span>페이지</span>수<text className='kr_text3'> : 메인페이지 1개, 서브페이지5개</text></li>
                       <li><span>특</span>징<text className='kr_text3'> : <br/>카카오톡,네이버 로그인 API ,카카오톡 채널 API,<br/>카카오 지도 API , 다음주소찾기 API </text></li>
