@@ -13,7 +13,7 @@ const Lottie = () => {
         })
     },[])
     return (
-      <div className="logo_sun" ref={sun}style={{width:250,height:250}}></div>
+      <div className="logo_sun" ref={sun}style={{width:100,height:100}}></div>
     )
   }
   export default Lottie;

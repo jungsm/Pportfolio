@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-/* import Lottie from "./lottie"; */
+import Lottie from "./lottie"; 
 import Modal from 'react-modal';
 import './rest.css'
 import './App.css';
@@ -76,7 +76,7 @@ function App() {
       <div className='container'>
       <section className='header'>
         <div className='menu_nav'>
-          <div className='logo'>{/* <Lottie/> */}</div>
+          <div className='logo'><Lottie/></div>
           <div className='menu_item'>
             <ul className='menu_drop'>
               <li><a>Home</a></li>
@@ -190,9 +190,9 @@ function App() {
                     </div>
                     <div className='modal_title2'><span className='kr_text  '>Project01 /</span><span className='kr_text'>&nbsp;&nbsp;수원시청</span></div>
                     <div className='modal_buttons'>
-                    <a href='https://github.com/jungsm/SuwonSicheong/blob/main/file/proposal.pdf'><button className='modal_button'>기획서보기</button></a>
-                    <a href='https://github.com/jungsm/SuwonSicheong.git'><button className='modal_button'>깃허브보기</button></a>
                     <a href='http://wjdtjsans0714.dothome.co.kr/'><button className='modal_button'>사이트보기</button></a>
+                    <a href='https://github.com/jungsm/SuwonSicheong.git'><button className='modal_button'>깃허브보기</button></a>
+                    <a href='https://github.com/jungsm/SuwonSicheong/blob/main/file/proposal.pdf'><button className='modal_button'>기획서보기</button></a>
                    
                     </div>
                 </div>
@@ -235,9 +235,9 @@ function App() {
                     </div>
                     <div className='modal_title2'><span className='kr_text  '>Project01 /</span><span className='kr_text'>&nbsp;&nbsp;뺏슈</span></div>
                     <div className='modal_buttons'>
-                    <a href='https://github.com/jungsm/bbatsueWeb/blob/main/file/%EB%BA%8F%EC%8A%88_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C_%EC%B5%9C%EC%A2%85%EC%88%98%EC%A0%95%EB%B3%B8.pdf'><button className='modal_button'>기획서보기</button></a>
-                    <a href='https://github.com/jungsm/bbatsueWeb'><button className='modal_button'>깃허브보기</button></a>
                     <a href='https://bbatsue-web.vercel.app/'><button className='modal_button'>사이트보기</button></a>
+                    <a href='https://github.com/jungsm/bbatsueWeb'><button className='modal_button'>깃허브보기</button></a>
+                    <a href='https://github.com/jungsm/bbatsueWeb/blob/main/file/%EB%BA%8F%EC%8A%88_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C_%EC%B5%9C%EC%A2%85%EC%88%98%EC%A0%95%EB%B3%B8.pdf'><button className='modal_button'>기획서보기</button></a>
                     </div>
                 </div>
                 <div className='modal_main'>
@@ -278,9 +278,9 @@ function App() {
                     </div>
                     <div className='modal_title2'><span className='kr_text  '>Project03 /&nbsp;&nbsp;ANBD</span></div>
                     <div className='modal_buttons'>
-                    <a href='https://file.notion.so/f/s/5b5b3e1a-93e2-4401-aeb7-17a4f1749521/2%EC%A1%B0(ANBD_).pdf?id=edd53c80-771d-4d13-8468-d94321a0871d&table=block&spaceId=f2b063ab-5763-4522-82a6-f18f4aaa1c70&expirationTimestamp=1681890681161&signature=yIJ0Cn-KbZffLYDpzeq05AdKPU3_DVOLe9lT7mTV9oY&downloadName=2%EC%A1%B0%28ANBD_%29.pdf'><button className='modal_button'>기획서보기</button></a>
-                    <a href='https://github.com/jungsm/team-project-ANBD'><button className='modal_button'>깃허브보기</button></a>
                     <a href='https://anbd.vercel.app/'><button className='modal_button'>사이트보기</button></a>
+                    <a href='https://github.com/jungsm/team-project-ANBD'><button className='modal_button'>깃허브보기</button></a>
+                    <a href='https://file.notion.so/f/s/5b5b3e1a-93e2-4401-aeb7-17a4f1749521/2%EC%A1%B0(ANBD_).pdf?id=edd53c80-771d-4d13-8468-d94321a0871d&table=block&spaceId=f2b063ab-5763-4522-82a6-f18f4aaa1c70&expirationTimestamp=1681890681161&signature=yIJ0Cn-KbZffLYDpzeq05AdKPU3_DVOLe9lT7mTV9oY&downloadName=2%EC%A1%B0%28ANBD_%29.pdf'><button className='modal_button'>기획서보기</button></a>
                     </div>
                 </div>
                 <div className='modal_main'>
@@ -310,7 +310,7 @@ function App() {
             <li className="project_item">
               <img  onClick={() => openModal(3  )} src="img/modal6.png"></img>
             <Modal isOpen={modalOpen[3]} closeTimeoutMS={300}  onRequestClose={() => closeModal(3)}>
-            <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(1)}></img>
+            <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(3)}></img>
               <div className='modal_wrap'>
               <div className='modal_container'>
                 <div className='modal_header'>
@@ -323,8 +323,8 @@ function App() {
                     <div className='modal_buttons'>
                     
                     
-                    <a href='https://github.com/jungsm/Pportfolio   '><button className='modal_button'>깃허브보기</button></a>
                     <a href='https://github.com/jungsm/Pportfolio'><button className='modal_button'>사이트보기</button></a>
+                    <a href='https://github.com/jungsm/Pportfolio   '><button className='modal_button'>깃허브보기</button></a>
                     </div>
                 </div>
                 <div className='modal_main'>
@@ -399,7 +399,6 @@ function App() {
         <div>
         <img src='img/banner_shape09.png' className='shape09'></img>
         <img src='img/banner_shape08.png' className='shape08'></img>
-        <img src='img/moon.png' className='moon'></img>
         </div>
     </section>
     <section className="section1">
@@ -410,8 +409,36 @@ function App() {
     </div>
       
     </section>
-    <section className="section2">
-      이메일
+    <section className="mail">
+      <div className='container'>
+      <div className='mail_title'>
+        <div className='mail_title1 sub_title'>CONTACT ME</div>
+        <div className='mail_title2 h1_text'>포트폴리오를 봐주셔서 감사합니다</div>
+      </div>
+      <ul className='mail_text kr_text5'>
+      <li className='mail_email'>이메일 : wjdtjsans0714@naver.com</li>
+      <li className='number'>전화번호 : 010-9378-7268</li>
+      </ul>
+      
+
+
+<div className='mail_img'>
+      <img className='mail_img1' src='img/img1.png'></img>
+      <img className='mail_img2' src='img/img2.png'></img>
+      <img className='mail_img3' src='img/img3.png'></img>
+      <img className='mail_img4' src='img/img4.png'></img>
+      <img className='mail_img5' src='img/img5.png'></img>
+      <img className='mail_img6' src='img/img6.png'></img>
+      <img className='mail_img7' src='img/img7.png'></img>
+    </div> 
+    </div>
+    </section>
+    <section className='footer'>
+      <div className='footer_title'>
+        <div className='footer_text'>
+        Copyright© 2023. Sunmoon Jung All rights reserved
+        </div>
+      </div>
     </section>
     </section>
     </PC>
