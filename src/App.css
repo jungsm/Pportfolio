@@ -25,6 +25,11 @@
   font-size: 32px;
   margin-bottom: 8%;
 }
+.kr_img_text{
+  font-family: "AppleSDGothic";
+  font-weight: bold;
+  font-size: 24px;
+}
 .mt{
   margin-top: 5%;
 }
@@ -163,6 +168,13 @@
     position: relative;
     top: 0;
     left: 0;
+}
+.img_banner{
+  width: 43%;
+    position: absolute;
+    /* height: 100%; */
+    left: 17%;
+    top: 10%;
 }
 .main_banner_right{
   display: flex;
@@ -317,12 +329,31 @@
   margin: 10px;
   width: 370px;
   height: 515px;
-  border: 18px solid #f3f7fa;
+  border: 10px solid #f3f7fa;
   border-radius: 42px;
+  overflow: hidden;
 }
 .project_item img{
   width: 100%;
   height: 515px;
+  cursor: pointer;
+  transition: .5s;
+}
+.project_item img:hover{
+  transform:  scale(1.05);
+  opacity: 0.5;
+}
+.img_text{
+  position: absolute;
+    z-index: 0;
+    top: 48%;
+    left: 37%;
+    opacity: 0;
+    color: #ffffff;
+    transition: 1s;
+}
+.project_item:hover .img_text{
+  opacity: 1;
 }
 /*마우스 커서*/
 

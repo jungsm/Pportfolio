@@ -87,7 +87,7 @@ function App() {
       </section>
       <section className='main_banner'>
         <div className='main_banner_left'>
-        {/*   <img className='img_banner' src="img/main.png"/> */}
+         <img className='img_banner' src="img/profile.png"/> 
         </div>
         <div className='main_banner_right'>
           <div className='right_textbox'>
@@ -177,7 +177,9 @@ function App() {
     >
           <SwiperSlide>
             <li className="project_item">
+              
               <img onClick={() => openModal(0)}  src="img/prt1.png"></img>
+              <p className='img_text kr_img_text'>상세정보 클릭</p>
               <Modal isOpen={modalOpen[0]} closeTimeoutMS={300}   onRequestClose={closeModal}>
               <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(0)}></img>
               <div className='modal_wrap'>
@@ -222,6 +224,7 @@ function App() {
             <SwiperSlide>
             <li className="project_item">
             <img onClick={() => openModal(1)} src="img/prt2.png"></img>
+            <p className='img_text kr_img_text'>상세정보 클릭</p>
             <Modal isOpen={modalOpen[1]}  closeTimeoutMS={300}  onRequestClose={() => closeModal(1)}>
 
             <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(1)}></img>
@@ -265,7 +268,9 @@ function App() {
             </SwiperSlide>
             <SwiperSlide>
             <li className="project_item">
-              <img onClick={() => openModal(2)} src="img/prt3.png"></img>
+              <img onClick={() => openModal(2)} src="img/prt3.png">
+              </img>
+              <p className='img_text kr_img_text'>상세정보 클릭</p>
               <Modal isOpen={modalOpen[2]} closeTimeoutMS={300}  onRequestClose={() => closeModal(2)}>
               <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(2)}></img>
               <div className='modal_wrap'>
@@ -309,6 +314,7 @@ function App() {
             <SwiperSlide>
             <li className="project_item">
               <img  onClick={() => openModal(3  )} src="img/modal6.png"></img>
+              <p className='img_text kr_img_text'>상세정보 클릭</p>
             <Modal isOpen={modalOpen[3]} closeTimeoutMS={300}  onRequestClose={() => closeModal(3)}>
             <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(3)}></img>
               <div className='modal_wrap'>
@@ -352,6 +358,7 @@ function App() {
             </SwiperSlide>
             <SwiperSlide>
             <li onClick={() => openModal(4)} className="project_item">5</li>
+            <p className='img_text kr_img_text'>상세정보 클릭</p>
             <Modal isOpen={modalOpen[4]}  closeTimeoutMS={300} onRequestClose={() => closeModal(4)}>
             <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(4)}></img>
               <div className='modal_wrap'>
