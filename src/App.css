@@ -4,14 +4,13 @@
   font-weight: bold;
   font-size: 46px;
 }
-.modal_en_text{
-  font-family: "AppleSDGothic";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  color: #f89e52;
+.footer_text{
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
 }
-
 .h2_title{
   text-align: center;
   font-family: "AppleSDGothic";
@@ -26,6 +25,11 @@
   font-size: 32px;
   margin-bottom: 8%;
 }
+.kr_img_text{
+  font-family: "AppleSDGothic";
+  font-weight: bold;
+  font-size: 24px;
+}
 .mt{
   margin-top: 5%;
 }
@@ -34,6 +38,12 @@
   font-family: "AppleSDGothic";
   font-weight: 100;
   font-size: 16px;
+}
+.kr_text4{
+  display: inline;
+  font-family: "AppleSDGothic";
+  font-weight: 100;
+  font-size: 45px;
 }
 .kr_text{
   font-family: "AppleSDGothic";
@@ -50,7 +60,7 @@
 }
 .h1_text{
   font-family: "Helvetica Neue";
-  font-weight: bold;
+  font-weight: 500;
   font-size: 45px;
 }
 .h3_text{
@@ -70,6 +80,21 @@
   font-family: "Helvetica Neue";
   font-weight: 500;
   font-size: 16px;
+} 
+.sub_title{
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  color: #f89e52;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.kr_text5{
+  font-family: "AppleSDGothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
 }
 .inner{
   padding-left:  15%;
@@ -144,6 +169,13 @@
     top: 0;
     left: 0;
 }
+.img_banner{
+  width: 43%;
+    position: absolute;
+    /* height: 100%; */
+    left: 17%;
+    top: 10%;
+}
 .main_banner_right{
   display: flex;
   align-items: center;
@@ -154,18 +186,23 @@
   padding-top: 20%;
 }
 
-.git_button{
-  width: 200px;
-  height: 70px;
+.button{
+  width: 160px;
+  height: 50px;
   font-size: 20px;
   font-family: "AppleSDGothic";
-font-style: normal;
-font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
   border: none;
-  margin-right: 35px;
-  border-radius: 20px;
+  margin-right: 15px;
   background-color: #3482ff;
   color: #ffffff;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); 
+}
+.button:hover{
+  background-color: #f89e52;
 }
 
 .right_textbox{
@@ -266,7 +303,7 @@ font-weight: 500;
 .project_text_box{
   display: flex;
   align-items: center;
-  padding-right: 5%;
+  padding-right: 2%;
 }
 .project_text{
   width: 463px;
@@ -292,12 +329,31 @@ font-weight: 500;
   margin: 10px;
   width: 370px;
   height: 515px;
-  border: 18px solid #f3f7fa;
+  border: 10px solid #f3f7fa;
   border-radius: 42px;
+  overflow: hidden;
 }
 .project_item img{
   width: 100%;
   height: 515px;
+  cursor: pointer;
+  transition: .5s;
+}
+.project_item img:hover{
+  transform:  scale(1.05);
+  opacity: 0.5;
+}
+.img_text{
+  position: absolute;
+    z-index: 0;
+    top: 48%;
+    left: 37%;
+    opacity: 0;
+    color: #ffffff;
+    transition: 1s;
+}
+.project_item:hover .img_text{
+  opacity: 1;
 }
 /*마우스 커서*/
 
@@ -411,6 +467,12 @@ border: none !important;
   font-size: 16px;
   padding-top: 5px;
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+}
+.modal_button:hover{
+background-color: #292f3f;
+color: #ffffff;
 }
 
 .modal_main{
@@ -535,14 +597,204 @@ background-color: #ffffff;
 
 
 
+/* maill */
+
+.mail{
+  position: relative;
+  width: 100%;
+  padding:110px 0px;
+}
+.mail_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mail_title1{
+  margin-bottom:20px
+}
+.mail_title2{
+  display: flex;
+}
+.mail_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.mail_text li:nth-child(1){
+  margin-bottom: 20px;
+}
+.mail_img1{
+  position: absolute;
+  top: 25%;
+    left: 22.4%;
+}
+.mail_img2{
+  position: absolute;
+  left: 16.2%;
+  top: 32%; 
+  animation: mail 20s linear infinite;
+}
+@keyframes mail{
+20% {
+    -webkit-transform: translate(73px,-1px) rotate(36deg);
+    transform: translate(73px,-1px) rotate(36deg);
+}
+40% {
+    -webkit-transform: translate(141px,72px) rotate(72deg);
+    transform: translate(141px,72px) rotate(72deg);
+}
+60% {
+    -webkit-transform: translate(83px,122px) rotate(108deg);
+    transform: translate(83px,122px) rotate(108deg);
+}
+80% {
+    -webkit-transform: translate(-40px,72px) rotate(144deg);
+    transform: translate(-40px,72px) rotate(144deg);
+}
+100% {
+    -webkit-transform: translate(0) rotate(0deg);
+    transform: translate(0) rotate(0deg);
+}
+}
+.mail_img3{
+  position: absolute;
+  animation: mail1 20s linear infinite;
+  bottom: 28%;
+  left: 17%;
+}
+@keyframes mail1 {
+0%, 100% {
+  -webkit-transform: translateX(0) translateY(0) rotate(0);
+  transform: translateX(0) translateY(0) rotate(0);
+}
+25%, 75% {
+  -webkit-transform: translateX(15px) translateY(20px) rotate(10deg);
+  transform: translateX(15px) translateY(20px) rotate(10deg);
+}
+50% {
+  -webkit-transform: translateX(60px) translateY(35px) rotate(15deg);
+  transform: translateX(60px) translateY(35px) rotate(15deg);
+}
+}
+.mail_img4{
+  position: absolute;
+  animation: mail2 10s linear infinite;
+  bottom: 10%;
+  left: 24.7%;
+}
+@keyframes mail2 {
+  0% {
+    -webkit-transform: translate(0) rotate(0deg);
+    transform: translate(0) rotate(0deg);
+}
+20% {
+    -webkit-transform: translate(73px,-1px) rotate(36deg);
+    transform: translate(73px,-1px) rotate(36deg);
+}
+40% {
+    -webkit-transform: translate(141px,72px) rotate(72deg);
+    transform: translate(141px,72px) rotate(72deg);
+}
+60% {
+    -webkit-transform: translate(83px,122px) rotate(108deg);
+    transform: translate(83px,122px) rotate(108deg);
+}
+80% {
+    -webkit-transform: translate(-40px,72px) rotate(144deg);
+    transform: translate(-40px,72px) rotate(144deg);
+}
+100% {
+    -webkit-transform: translate(0) rotate(0deg);
+    transform: translate(0) rotate(0deg);
+}
+}
+.mail_img5{
+  position: absolute;
+  animation: mail3 10s linear infinite;
+    right: 21%;
+    top: 46%;
+}
+@keyframes mail3 {
+0% {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+100% {
+  -webkit-transform: rotate(1turn);
+  transform: rotate(1turn);
+}
+}
+.mail_img6{
+  position: absolute;
+  animation: mail4 35s linear infinite;
+  right: 13%;
+  top: 27%;
+}
+@keyframes mail4 {
+0% {
+  -webkit-transform: translate(0) rotate(0deg);
+  transform: translate(0) rotate(0deg);
+}
+20% {
+  -webkit-transform: translate(73px,-1px) rotate(36deg);
+  transform: translate(73px,-1px) rotate(36deg);
+}
+40% {
+  -webkit-transform: translate(141px,72px) rotate(72deg);
+  transform: translate(141px,72px) rotate(72deg);
+}
+60% {
+  -webkit-transform: translate(83px,122px) rotate(108deg);
+  transform: translate(83px,122px) rotate(108deg);
+}
+80% {
+  -webkit-transform: translate(-40px,72px) rotate(144deg);
+  transform: translate(-40px,72px) rotate(144deg);
+}
+100% {
+  -webkit-transform: translate(0) rotate(0deg);
+  transform: translate(0) rotate(0deg);
+}
+}
+.mail_img7{
+  position: absolute;
+  animation: mail5 15s linear infinite;
+    bottom: 24%;
+    right: 17%;
+}
+@keyframes mail5 {
+0%, 100% {
+  -webkit-transform: translateX(0) translateY(0) rotate(0);
+  transform: translateX(0) translateY(0) rotate(0);
+}
+25%, 75% {
+  -webkit-transform: translateX(15px) translateY(20px) rotate(10deg);
+  transform: translateX(15px) translateY(20px) rotate(10deg);
+}
+50% {
+  -webkit-transform: translateX(60px) translateY(35px) rotate(15deg);
+  transform: translateX(60px) translateY(35px) rotate(15deg);
+}
+}
 
 
 
 
 
+/*푸터*/
 
-
-
+.footer{
+  margin-top: 8%;
+  width: 100%;
+  
+  background-color: #1f1d28
+}
+.footer_title{
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -557,11 +809,9 @@ background-color: #ffffff;
   right: 65%;
   animation: rotate_image1 8s linear infinite forwards alternate ; /* 애니메이션 적용 */
 }
-.moon{
+.shape09{
   position: absolute;
-  width: 90px;
-  height: 90px;
-  bottom: 70%;
+  bottom: 55%;
   right: 89%;
    animation: rotate_image2 8s linear infinite forwards alternate ; /* 애니메이션 적용 */
 }
@@ -673,7 +923,7 @@ background-color: #ffffff;
 .shape07{
   position: absolute;
   bottom: 18%;
-    right:28.8%;
+    right:18.8%;
   z-index: -1;
   animation: box-ani 3s linear infinite forwards alternate ; /* 애니메이션 적용 */
 }
