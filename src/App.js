@@ -50,7 +50,7 @@ function App() {
     },
     {
       name: "Vue",
-      value: "50%"
+      value: "60%"
     },
   ];
   
