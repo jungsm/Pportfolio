@@ -51,6 +51,10 @@ function App() {
       name: "Vue",
       value: "60%"
     },
+    {
+      name: "Figma",
+      value: "80%"
+    },
   ];
   
   const [modalOpen, setModalOpen] = useState([false, false]);
@@ -79,8 +83,8 @@ function App() {
           <div className='menu_item'>
             <ul className='menu_drop'>
               <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Portfolio</a></li>
+              <li><a href='#about'>About</a></li>
+              <li><a href='#project'>Portfolio</a></li>
             </ul>
           </div>
         </div>
@@ -94,7 +98,7 @@ function App() {
             <p className='h1_title'>해와 달처럼<br></br> 조화로운 코드를 구현하는<br/> 프론트엔드 정선문 입니다<p/> </p>
             <div className="main_button_box">
             <a href='https://github.com/jungsm?tab=repositories'><button className='button'><span className='kr_text'>깃허브</span></button></a>
-            <a href='https://github.com/jungsm?tab=repositories'><button className='button'><span className='kr_text'>이력서</span></button></a>
+            <a href='https://drive.google.com/file/d/1scWpORv5fb2kWsx7a1d_UnIs1qIAzMvg/view'><button className='button'><span className='kr_text'>이력서</span></button></a>
             </div>
         </div>
         </div>  
@@ -108,8 +112,8 @@ function App() {
     <img src='img/banner_shape07.png'className='shape07' ></img>
     <img src="img/banner_shape04.png" className="shape04"></img>
     </div>
-    <section className="about container">
-      <ul className="about_items">
+    <section id="about">
+      <ul className="about_items container">
         <li className="about_item">
           <div className="item_box">
           <div className="item_icon1">
@@ -148,8 +152,8 @@ function App() {
         </li>
       </ul>
     </section>
-    <section className="project margin_top">
-      <div className="container">
+    <section id="project">
+      <div className="container margin_top">
       <div className="project_box">
         <div className="project_text_box">
           <div className="project_text">
@@ -313,7 +317,7 @@ function App() {
             </SwiperSlide>
             <SwiperSlide>
             <li className="project_item">
-              <img  onClick={() => openModal(3  )} src="img/modal6.png"></img>
+              <img  onClick={() => openModal(3  )} src="img/prt4.png"></img>
               <p className='img_text kr_img_text'>상세정보 클릭</p>
             <Modal isOpen={modalOpen[3]} closeTimeoutMS={300}  onRequestClose={() => closeModal(3)}>
             <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(3)}></img>
@@ -336,7 +340,7 @@ function App() {
                 <div className='modal_main'>
                   <div className='modal_left'>
                     <div className='modal_imgbox'>
-                      <img className='modal_img' src='img/modal6.png'></img>
+                      <img className='modal_img' src='img/prt4.png'></img>
                     </div>
                   </div>
                   <div className='modal_right'>
@@ -420,7 +424,7 @@ function App() {
       <div className='container'>
       <div className='mail_title'>
         <div className='mail_title1 sub_title'>CONTACT ME</div>
-        <div className='mail_title2 h1_text'>포트폴리오를 봐주셔서 감사합니다</div>
+        <div className='mail_title2 h1_text'>저의 포트폴리오를 봐주셔서 감사합니다</div>
       </div>
       <ul className='mail_text kr_text5'>
       <li className='mail_email'>이메일 : wjdtjsans0714@naver.com</li>
