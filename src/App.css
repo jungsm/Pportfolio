@@ -174,8 +174,7 @@
 .img_banner{
   width: 43%;
     position: absolute;
-    /* height: 100%; */
-    left: 17%;
+    left: 30%;
     top: 10%;
 }
 .main_banner_right{
@@ -586,7 +585,7 @@ background-color: #ffffff;
 }
 
 .fill {
-  background-color:#979594;
+  background-color:#3482ff;
   height: 100%;
 }
 

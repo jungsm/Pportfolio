@@ -98,7 +98,7 @@ function App() {
             <p className='h1_title'>해와 달처럼<br></br> 조화로운 코드를 구현하는<br/> 프론트엔드 정선문 입니다<p/> </p>
             <div className="main_button_box">
             <a href='https://github.com/jungsm?tab=repositories'><button className='button'><span className='kr_text'>깃허브</span></button></a>
-            <a href='https://drive.google.com/file/d/1scWpORv5fb2kWsx7a1d_UnIs1qIAzMvg/view'><button className='button'><span className='kr_text'>이력서</span></button></a>
+            <a href='https://drive.google.com/file/d/18IpGm4ca2rx1KWCgeFZaJMLOiXLjhBK8/view?usp=share_link'><button className='button'><span className='kr_text'>이력서</span></button></a>
             </div>
         </div>
         </div>  
@@ -158,7 +158,7 @@ function App() {
         <div className="project_text_box">
           <div className="project_text">
             <span className="h3_text">프로젝트</span>
-          <span className="kr_text4">이미지를 클릭 시 해당 프로젝트의 상세정보를<br/> 확인하실 수 있습니다.</span> <br/>
+          <span className="kr_text4">이미지를 클릭 시 해당 <br/>프로젝트의 상세정보를<br/> 확인하실 수 있습니다.</span> <br/>
           <span className="h4_text">HTML,CSS,SCSS,JavaScript,JQuery<br/>React,React Native로 작업한 프로젝트 입니다.</span>
           <ul className="arrow_box">
             <div className='swiper-button-prev'></div>
