@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .h1_title{
   font-family: "AppleSDGothic";
   font-style: normal;
@@ -130,7 +133,7 @@
     cursor: pointer;
     color: #1f1d28;
 }
-.menu_drop li:first-child{
+.menu_drop li a:hover{
   color: #f89e52 ;
 }
 .logo{
@@ -222,15 +225,24 @@
   align-items: center;
   justify-content: space-around;
 }
-#about .about_items .about_item{
+.about_item{
+  position: relative;
   width: 30%;
   height: 330px;
   margin: 35px;
   padding:30px 40px 0 40px;
   border: 1px solid #f3f3f3;
   border-radius:  20px;
-  box-shadow: 0 15px 30px rgba(61,90,125,.08)
+  box-shadow: 0 15px 30px rgba(61,90,125,.08);
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
 }
+.about_item:hover{
+  transform: translateY(-40px);
+  box-shadow: 0 15px 30px rgba(19, 110, 300, 0.08);
+}
+
+
 #about .about_items .about_item:nth-child(2) {
 
   margin-top: 5%;
@@ -261,7 +273,7 @@
   border-radius: 50%;
   content: "";
   height: 87%;
-  left: 114px;
+  left: 104px;
   position: absolute;
   top:-12px;
   width: 28%;
@@ -630,6 +642,7 @@ background-color: #ffffff;
   position: absolute;
   top: 25%;
     left: 22.4%;
+    z-index: -1;
 }
 .mail_img2{
   position: absolute;

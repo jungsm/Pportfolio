@@ -97,8 +97,8 @@ function App() {
           <div className='right_textbox'>
             <p className='h1_title'>해와 달처럼<br></br> 조화로운 코드를 구현하는<br/> 프론트엔드 정선문 입니다<p/> </p>
             <div className="main_button_box">
-            <a href='https://github.com/jungsm?tab=repositories'><button className='button'><span className='kr_text'>깃허브</span></button></a>
-            <a href='https://drive.google.com/file/d/18IpGm4ca2rx1KWCgeFZaJMLOiXLjhBK8/view?usp=share_link'><button className='button'><span className='kr_text'>이력서</span></button></a>
+            <a href='https://github.com/jungsm?tab=repositories' target="_blank"><button className='button'><span className='kr_text'>깃허브</span></button></a>
+            <a href='https://drive.google.com/file/d/1x-i9clF8w3-TjHmGfBIvJMHJaebp-zk8/view?usp=share_link'  target="_blank"><button className='button'><span className='kr_text'>이력서</span></button></a>
             </div>
         </div>
         </div>  
@@ -159,7 +159,7 @@ function App() {
           <div className="project_text">
             <span className="h3_text">프로젝트</span>
           <span className="kr_text4">이미지를 클릭 시 해당 <br/>프로젝트의 상세정보를<br/> 확인하실 수 있습니다.</span> <br/>
-          <span className="h4_text">HTML,CSS,SCSS,JavaScript,JQuery<br/>React,React Native로 작업한 프로젝트 입니다.</span>
+          <span className="h4_text">HTML,CSS,SCSS,JavaScript,JQuery<br/>React로 작업한 프로젝트 입니다.</span>
           <ul className="arrow_box">
             <div className='swiper-button-prev'></div>
           </ul>
@@ -196,9 +196,9 @@ function App() {
                     </div>
                     <div className='modal_title2'><span className='kr_text  '>Project01 /</span><span className='kr_text'>&nbsp;&nbsp;수원시청</span></div>
                     <div className='modal_buttons'>
-                    <a href='http://wjdtjsans0714.dothome.co.kr/'><button className='modal_button'>사이트보기</button></a>
-                    <a href='https://github.com/jungsm/SuwonSicheong.git'><button className='modal_button'>깃허브보기</button></a>
-                    <a href='https://github.com/jungsm/SuwonSicheong/blob/main/file/proposal.pdf'><button className='modal_button'>기획서보기</button></a>
+                    <a href='http://wjdtjsans0714.dothome.co.kr/'  target="_blank"><button className='modal_button'>사이트보기</button></a>
+                    <a href='https://github.com/jungsm/SuwonSicheong.git'  target="_blank"><button className='modal_button'>깃허브보기</button></a>
+                    <a href='https://github.com/jungsm/SuwonSicheong/blob/main/file/proposal.pdf'  target="_blank"><button className='modal_button'>기획서보기</button></a>
                    
                     </div>
                 </div>
@@ -242,9 +242,9 @@ function App() {
                     </div>
                     <div className='modal_title2'><span className='kr_text  '>Project01 /</span><span className='kr_text'>&nbsp;&nbsp;뺏슈</span></div>
                     <div className='modal_buttons'>
-                    <a href='https://bbatsue-web.vercel.app/'><button className='modal_button'>사이트보기</button></a>
-                    <a href='https://github.com/jungsm/bbatsueWeb'><button className='modal_button'>깃허브보기</button></a>
-                    <a href='https://github.com/jungsm/bbatsueWeb/blob/main/file/%EB%BA%8F%EC%8A%88_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C_%EC%B5%9C%EC%A2%85%EC%88%98%EC%A0%95%EB%B3%B8.pdf'><button className='modal_button'>기획서보기</button></a>
+                    <a href='https://bbatsue-web.vercel.app/'  target="_blank"><button className='modal_button'>사이트보기</button></a>
+                    <a href='https://github.com/jungsm/bbatsueWeb'  target="_blank"><button className='modal_button'>깃허브보기</button></a>
+                    <a href='https://github.com/jungsm/bbatsueWeb/blob/main/file/%EB%BA%8F%EC%8A%88_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C_%EC%B5%9C%EC%A2%85%EC%88%98%EC%A0%95%EB%B3%B8.pdf'  target="_blank"><button className='modal_button'>기획서보기</button></a>
                     </div>
                 </div>
                 <div className='modal_main'>
@@ -257,7 +257,7 @@ function App() {
                     <ul className='modal_text kr_text'>
                       <li><span>구현기</span>술<text className='h5_text'> : <br/>HTML5, SCSS, JS, Bootstrap, AJAX</text></li>
                       <li><span>작업기</span>술<text className='kr_text3'> : 2주</text></li>
-                      <li><span>배포매</span>체<text className='kr_text3'> : 웹(WEB)</text></li>
+                      <li><span>배포매</span>체<text className='kr_text3'> : 웹(WEB),반응형</text></li>
                       <li><span>본인기여</span>도<text className='h5_text'> : 총인원 4명 25%</text></li>
                       <li><span>브라우저 </span>호환성<text className='kr_text3'> : 크롬,익스플로어</text></li>
                       <li><span>페이지</span>수<text className='kr_text3'> : 메인페이지 1개, 서브페이지 4개</text></li>
@@ -287,9 +287,9 @@ function App() {
                     </div>
                     <div className='modal_title2'><span className='kr_text  '>Project03 /&nbsp;&nbsp;ANBD</span></div>
                     <div className='modal_buttons'>
-                    <a href='https://anbd.vercel.app/'><button className='modal_button'>사이트보기</button></a>
-                    <a href='https://github.com/jungsm/team-project-ANBD'><button className='modal_button'>깃허브보기</button></a>
-                    <a href='https://file.notion.so/f/s/5b5b3e1a-93e2-4401-aeb7-17a4f1749521/2%EC%A1%B0(ANBD_).pdf?id=edd53c80-771d-4d13-8468-d94321a0871d&table=block&spaceId=f2b063ab-5763-4522-82a6-f18f4aaa1c70&expirationTimestamp=1681890681161&signature=yIJ0Cn-KbZffLYDpzeq05AdKPU3_DVOLe9lT7mTV9oY&downloadName=2%EC%A1%B0%28ANBD_%29.pdf'><button className='modal_button'>기획서보기</button></a>
+                    <a href='https://anbd.vercel.app/'  target="_blank"><button className='modal_button'>사이트보기</button></a>
+                    <a href='https://github.com/jungsm/team-project-ANBD'  target="_blank"><button className='modal_button'>깃허브보기</button></a>
+                    <a href='https://drive.google.com/file/d/1DzFp1u04hHfmyOE0RK894UEbAqsELZJd/view?usp=sharing'  target="_blank"><button className='modal_button'>기획서보기</button></a>
                     </div>
                 </div>
                 <div className='modal_main'>
@@ -314,93 +314,6 @@ function App() {
              </div>
              </Modal>
             </li>
-            </SwiperSlide>
-            <SwiperSlide>
-            <li className="project_item">
-              <img  onClick={() => openModal(3  )} src="img/prt4.png"></img>
-              <p className='img_text kr_img_text'>상세정보 클릭</p>
-            <Modal isOpen={modalOpen[3]} closeTimeoutMS={300}  onRequestClose={() => closeModal(3)}>
-            <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(3)}></img>
-              <div className='modal_wrap'>
-              <div className='modal_container'>
-                <div className='modal_header'>
-                  <div className='modal_title'>
-                    <div className='modal_title_text'>
-                    Portfolio Details
-                    </div>
-                    </div>
-                    <div className='modal_title2'><span className='kr_text  '>Project04  /</span><span className='kr_text'>&nbsp;&nbsp;뺏슈</span></div>
-                    <div className='modal_buttons'>
-                    
-                    
-                    <a href='https://github.com/jungsm/Pportfolio'><button className='modal_button'>사이트보기</button></a>
-                    <a href='https://github.com/jungsm/Pportfolio   '><button className='modal_button'>깃허브보기</button></a>
-                    </div>
-                </div>
-                <div className='modal_main'>
-                  <div className='modal_left'>
-                    <div className='modal_imgbox'>
-                      <img className='modal_img' src='img/prt4.png'></img>
-                    </div>
-                  </div>
-                  <div className='modal_right'>
-                    <ul className='modal_text kr_text'>
-                      <li><span>구현기</span>술<text className='h5_text'> : <br/>React</text></li>
-                      <li><span>작업기</span>술<text className='kr_text3'> : 2주</text></li>
-                      <li><span>배포매</span>체<text className='kr_text3'> : 웹(WEB)</text></li>
-                      <li><span>본인기여</span>도<text className='h5_text'> : 25%</text></li>
-                      <li><span>브라우저 </span>호환성<text className='kr_text3'> : 크롬,익스플로어</text></li>
-                      <li><span>페이지</span>수<text className='kr_text3'> : 메인페이지 1개, 서브페이지 4개</text></li>
-                      <li><span>특</span>징<text className='kr_text3'> : <br/></text></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-             </div>
-             </Modal>
-             </li>
-            </SwiperSlide>
-            <SwiperSlide>
-            <li onClick={() => openModal(4)} className="project_item">5</li>
-            <p className='img_text kr_img_text'>상세정보 클릭</p>
-            <Modal isOpen={modalOpen[4]}  closeTimeoutMS={300} onRequestClose={() => closeModal(4)}>
-            <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(4)}></img>
-              <div className='modal_wrap'>
-              <div className='modal_container'>
-                <div className='modal_header'>
-                  <div className='modal_title'>
-                    <div className='modal_title_text'>
-                    Portfolio Details
-                    </div>
-                    </div>
-                    <div className='modal_title2'><span className='kr_text  '>Project01 /</span><span className='kr_text'>수원시청</span></div>
-                    <div className='modal_buttons'>
-                    <a><button className='modal_button'>기획서보기</button></a>
-                    <a><button className='modal_button'>깃허브보기</button></a>
-                    <a><button className='modal_button'>사이트보기</button></a>
-                    </div>
-                </div>
-                <div className='modal_main'>
-                  <div className='modal_left'>
-                    <div className='modal_imgbox'>
-                      <img className='modal_img' src='img/modal3.png'></img>
-                    </div>
-                  </div>
-                  <div className='modal_right'>
-                    <ul className='modal_text kr_text'>
-                      <li><span>구현기</span>술<text className='h5_text'> : HTML,CSS,JavaScript</text></li>
-                      <li><span>작업기</span>술<text className='kr_text3'> : 3주</text></li>
-                      <li><span>배포매</span>체<text className='kr_text3'> : 웹(WEB)</text></li>
-                      <li><span>본인기여</span>도<text className='h5_text'> : 100%</text></li>
-                      <li><span>브라우저 </span>호환성<text className='kr_text3'> : 크롬,익스플로어</text></li>
-                      <li><span>페이지</span>수<text className='kr_text3'> : 메인페이지</text></li>
-                      <li><span>특</span>징<text className='kr_text3'> : </text></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-             </div>
-             </Modal>
             </SwiperSlide>
             </Swiper>
           </ul>
