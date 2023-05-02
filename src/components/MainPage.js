@@ -23,7 +23,7 @@ function MainPage() {
                 </div>
                 <div className='main_banner_right'>
                   <div className='right_textbox'>
-                    <p className='h1_title'>해와 달처럼<br></br> 조화로운 코드를 구현하는<br /> 프론트엔드 정선문 입니다<p /> </p>
+                    <p className='h1_title'><mark className='mark_sun'>해</mark>와 <mark className='mark_moon'>달</mark>처럼<br></br> 조화로운 코드를 구현하는<br /> 프론트엔드 <mark className='mark_name'>정선문</mark> 입니다<p /> </p>
                     <div className="main_button_box">
                       <a href='https://github.com/jungsm?tab=repositories' target="_blank"><button className='button'><span className='kr_text'>깃허브</span></button></a>
                       <a href='https://drive.google.com/file/d/1x-i9clF8w3-TjHmGfBIvJMHJaebp-zk8/view?usp=share_link' target="_blank"><button className='button'><span className='kr_text'>이력서</span></button></a>

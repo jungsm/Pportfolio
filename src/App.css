@@ -100,6 +100,18 @@ html {
 	font-weight: bold;
 	font-size: 20px;
 }
+mark{
+	background-color:transparent;
+}
+.mark_sun{
+	color:  #ffc600;;
+}
+.mark_moon{
+	color: #c1c2c5;
+}
+.mark_name{
+	box-shadow: inset 0px -40px 0 #5cc9ff2e;
+}
 .inner {
 	padding-left: 15%;
 }
@@ -786,7 +798,7 @@ html {
 	background-color: #1f1d28;
 }
 .footer_title {
-	padding: 50px 0px;
+	padding: 20px 0px;
 	display: flex;
 	justify-content: center;
 }
