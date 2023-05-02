@@ -147,6 +147,8 @@ mark{
 	color: #f89e52;
 }
 .logo {
+	position: relative;
+	top: -15px;
 	width: 100px;
 	height: 100px;
 }
