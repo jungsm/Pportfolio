@@ -1,4 +1,4 @@
-import lottieAni from "./sun.json"
+import lottieAni from "../sun.json"
 import lottie from "lottie-web";
 import React from 'react';
 
