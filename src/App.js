@@ -1,5 +1,5 @@
 
-import './rest.css'
+import './rest.css';
 import './App.css';
 import './font/font.css'
 import 'swiper/css';

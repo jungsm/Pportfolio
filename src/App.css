@@ -343,6 +343,7 @@ mark{
 	display: flex;
 	align-items: center;
 	max-width: 82%;
+	cursor: pointer;
 }
 .project_item {
 	margin: 10px;
@@ -552,6 +553,7 @@ mark{
 .section1 {
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
@@ -581,30 +583,23 @@ mark{
 	height: 1.5em;
 }
 
-.name {
-	font-family: "AppleSDGothic";
-	font-style: normal;
-	font-weight: bold;
-	width: 20%;
-	text-align: center;
-}
-
-.fillContainer {
-	width: 68%;
+.skill{
 	display: flex;
-	background: white;
 }
-
-.fill {
-	background-color: #3482ff;
-	height: 100%;
+.skill_box{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 0px 30px;
 }
-
-.value {
-	width: 4%;
-	text-align: right;
+.skill_img{
+	width: 100px;
+	margin: 20% 0px;
+	transition: transform 0.3s ease-out;
 }
-
+.skill_img:hover{
+	transform: translateY(-20px);
+}
 /* maill */
 
 .mail {

@@ -1,7 +1,20 @@
 import React, { Component } from 'react'
-
+import { useState, useEffect } from 'react';
 function AboutPage() {
+const [isVisible, setIsVisible] = useState(false);
 
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    }
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
     return (
         <section id="about">
         <ul className="about_items container">

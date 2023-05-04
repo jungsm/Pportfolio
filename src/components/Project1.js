@@ -19,7 +19,7 @@ const SlideBox = () => {
   return (
     <li className="project_item">
       <img onClick={() => openModal(0)} src="img/prt1.png" />
-      <p className='img_text kr_img_text'>상세정보 클릭</p>
+      <p onClick={() => openModal(0)} className='img_text kr_img_text'>상세정보 클릭</p>
       <Modal isOpen={modalOpen[0]} closeTimeoutMS={300} onRequestClose={closeModal}>
         <img src='img/x.png' className="Exit_img  " onClick={() => closeModal(0)} />
         <div className='modal_wrap'>

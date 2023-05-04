@@ -12,7 +12,7 @@ function ProjectPage (){
               <div className="project_box">
                 <div className="project_text_box">
                   <div className="project_text">
-                    <span className="h3_text">프로젝트</span>
+                    <span className="h3_text">Project</span>
                     <span className="kr_text4">이미지를 클릭 시 해당 <br />프로젝트의 상세정보를<br /> 확인하실 수 있습니다.</span> <br />
                     <span className="h4_text">HTML,CSS,SCSS,JavaScript,JQuery<br />React로 작업한 프로젝트 입니다.</span>
                     <ul className="arrow_box">
