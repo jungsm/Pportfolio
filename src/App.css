@@ -624,6 +624,18 @@ mark{
 	align-items: center;
 	margin-top: 40px;
 }
+.mail_text li {
+	cursor: pointer;
+}
+.text_copy{
+	width: 60px;
+    height: 30px;
+    background-color: #3482ff;
+    color: white;
+    border: 0px;
+	cursor: pointer;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
 .mail_text li:nth-child(1) {
 	margin-bottom: 20px;
 }
