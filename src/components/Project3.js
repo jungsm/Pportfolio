@@ -34,7 +34,7 @@ const Project3 = () => {
               <div className='modal_title2'><span className='kr_text  '>Project03 /&nbsp;&nbsp;ANBD</span></div>
               <div className='modal_buttons'>
                 <a href='https://anbd.vercel.app/' target="_blank"><button className='modal_button'>사이트보기</button></a>
-                <a href='https://github.com/jungsm/team-project-ANBD' target="_blank"><button className='modal_button'>깃허브보기</button></a>
+                <a href='https://github.com/2ANBD/ANBD' target="_blank"><button className='modal_button'>깃허브보기</button></a>
                 <a href='https://drive.google.com/file/d/1DzFp1u04hHfmyOE0RK894UEbAqsELZJd/view?usp=sharing' target="_blank"><button className='modal_button'>기획서보기</button></a>
               </div>
             </div>

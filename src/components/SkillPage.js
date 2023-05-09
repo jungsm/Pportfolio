@@ -1,36 +1,6 @@
 import React, { Component } from 'react' 
  function SkillPage() {
-    const skills = [
-        {
-          name: "HTML",
-          value: "90%",
-    
-        },
-        {
-          name: "CSS",
-          value: "90%"
-        },
-        {
-          name: "Javascript",
-          value: "90%"
-        },
-        {
-          name: "REACT",
-          value: "80%"
-        },
-        {
-          name: "Jquery",
-          value: "70%"
-        },
-        {
-          name: "Vue",
-          value: "60%"
-        },
-        {
-          name: "Figma",
-          value: "80%"
-        },
-      ];
+  
     
     return (
         <section className="section1">
