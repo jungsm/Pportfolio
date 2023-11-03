@@ -29,7 +29,7 @@ const [isVisible, setIsVisible] = useState(false);
                 <p className="kr_text">이름: 정선문</p>
                 <p className="kr_text">전화번호: 010-9378-7268</p>
                 <p className="kr_text">생년월일: 2001.07.14</p>
-                <p className="kr_text">거주지: 경기도 수원시 메탄2동 </p>
+                <p className="kr_text">거주지: 경기도 수원시 메탄동 </p>
               </div>
             </div>
           </li>
